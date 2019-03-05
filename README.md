@@ -1,5 +1,5 @@
 Mar 5, 2019 (Tue)
-<H1> Lesson 1 </H1>
+<H1> Lesson 1 - Computer Introduction </H1>
 
   <H2> 1. Program VS Process </H2>
 
