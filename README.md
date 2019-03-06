@@ -7,5 +7,5 @@ The major difference between these two is "program" is a group of instructions t
 
 <H2> 2. Memory </H2>
 
-
+**Memory Hierarchy**
 
