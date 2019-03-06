@@ -13,7 +13,7 @@ The major difference between these two is "program" is a group of instructions t
 
 **How CPU (Central Processing Unit) Works**
 
-<img width="445" alt="2019-03-06 10 33 54" src="https://user-images.githubusercontent.com/29372705/53849545-91627200-3ffb-11e9-8eb4-b76812d8f594.png">
+<img width="445" src="https://user-images.githubusercontent.com/29372705/53850423-89f09800-3ffe-11e9-9ed9-8b787e3ddf1c.png">
 
 Components | Roles
 ---------- |------
