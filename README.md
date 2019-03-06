@@ -61,3 +61,12 @@ Enqueue means to insert an item into the **back** of the queue, dequeue means re
 
 <img width="320" alt="2019-03-06 12 08 52" src="https://user-images.githubusercontent.com/29372705/53853402-abef1800-4008-11e9-94b4-40a2bd36d55a.png">
 
+<H2> 5. Number System </H2>
+
+**5.1 Type of Notation**
+
+- Binary notation: Digital number system used in computer
+- Decimal notation: Normal number system
+- Octal notation: used to abbreviate binary (hardly used today)
+- Hexadecimal notation: used to abbreviate binary
+
