@@ -89,7 +89,7 @@ Ex) **a = 0011 1100 / b = 0000 1101**
 Operator | Description | Example
 -------- | ----------- | --------
 & | AND; Both true | (a & b) = 0000 1100
-"|" | OR; Either one true | (a | b) = 0011 1101
+| OR; Either one true | (a | b) = 0011 1101
 
 
 
