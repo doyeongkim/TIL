@@ -101,7 +101,7 @@ Logical operation operates on 2 types of logical values, True or False.
 
 **AND (&&) / OR (||) / NOT (!)**
 
-A | B | A && B| A || B | !A
+A | B | A && B| A (||) B | !A
 --- | --- | --- | --- | ---
 
 
