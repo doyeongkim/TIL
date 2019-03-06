@@ -7,11 +7,11 @@ The major difference between these two is "program" is a group of instructions t
 
 <H2> 2. Memory </H2>
 
-**Memory Hierarchy**
+**2.1 Memory Hierarchy**
 
 <img width="450" src="https://user-images.githubusercontent.com/29372705/53848587-409d4a00-3ff8-11e9-99f5-d49467b7b91b.png">
 
-**How CPU (Central Processing Unit) Works**
+**2.2 How CPU (Central Processing Unit) Works**
 
 <img width="445" src="https://user-images.githubusercontent.com/29372705/53850423-89f09800-3ffe-11e9-9ed9-8b787e3ddf1c.png">
 
@@ -22,13 +22,11 @@ CU (Control Unit) | Decodes the instruction (send data to ALU to execute arithme
 CPU register | Temporary storage for instructions or data
 Bus interface | receive or send data from other devices
 
+To add more,
 
+The ALU performs arithmetic operations such as addition and subtraction, and logical operations such as AND OR. However, will ALU know the instruction 1+1? Nope! The ALU only performs arithmetic operations. Hence, the control unit (CU) decodes the instruction (decides what it means) fetched from external memory and directs that the necessary data be moved from memory to the ALU.
 
+At this time, what if other arithmetic operation request signals keep coming in while the ALU is under operation? It first needs to complete what it is currently handling, then the following signal is processed. If the other signals continue to come in at this point, it may be more efficient to store these signals somewhere and then pull them out when the situation permits. This temporary storage is called Register. Registers work under the direction of the control unit to accept, hold, and transfer instructions or data and perform arithmetic or logical comparisons at high speed.
 
-
-The control unit fetches (gets) the instruction from memory.
-The control unit decodes the instruction (decides what it means) and directs that the necessary data be moved from memory to the arithmetic/logic unit.
-
-Registers are temporary storage areas for instructions or data. They are not a part of memory; rather they are special additional storage locations that offer the advantage of speed. Registers work under the direction of the control unit to accept, hold, and transfer instructions or data and perform arithmetic or logical comparisons at high speed. The control unit uses a data storage register the way a store owner uses a cash register-as a temporary, convenient place to store what is used in transactions. 
 
 
