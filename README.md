@@ -36,8 +36,8 @@ Ex) Pringles sncak, Mart Cart, etc.
     Web browser history (go back), Undo/Redo, etc.
 
 <div>
-<img width="350" alt="2019-03-06 11 48 29" src="https://user-images.githubusercontent.com/29372705/53852581-ddb2af80-4005-11e9-8d54-d273e6176710.png">
-<img width="350" alt="2019-03-06 11 48 48" src="https://user-images.githubusercontent.com/29372705/53852583-e0150980-4005-11e9-94b2-70d6b4237f52.png">
+<img width="450" alt="2019-03-06 11 48 29" src="https://user-images.githubusercontent.com/29372705/53852581-ddb2af80-4005-11e9-8d54-d273e6176710.png">
+<img width="450" alt="2019-03-06 11 48 48" src="https://user-images.githubusercontent.com/29372705/53852583-e0150980-4005-11e9-94b2-70d6b4237f52.png">
 </div>
 
 
