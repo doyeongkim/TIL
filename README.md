@@ -79,3 +79,14 @@ Enqueue means to insert an item into the **back** of the queue, dequeue means re
 
 <img width="300" hight="300" alt="2019-03-06 12 36 32" src="https://user-images.githubusercontent.com/29372705/53854354-85cb7700-400c-11e9-94e1-7df03e05cfd6.png">
 </div>
+
+<H2> 6. Bitwise operation </H2>
+
+
+
+
+<H2> 7. Logical operation </H2>
+
+
+
+<H2> 8. Naming Convention <H2>
