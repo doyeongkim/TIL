@@ -90,10 +90,10 @@ Operator | Description | Example
 -------- | ----------- | --------
 & | AND; Both true | (a & b) = 0000 1100
 <img width="19" alt="2019-03-06 12 57 59" src="https://user-images.githubusercontent.com/29372705/53855102-8dd8e600-400f-11e9-9a97-399abedeb396.png">| OR; Either one true | <img width="92" alt="2019-03-06 12 59 44" src="https://user-images.githubusercontent.com/29372705/53855154-ca0c4680-400f-11e9-912c-f18ce05b1578.png">
-^ | 
-
-
-
+^ | XOR; Only one true | (a ^ b) = 0011 0001
+~ | NOT | (~a) = 1100 0011
+<< | Left Shift; move variable value to the left by the specified bits | a << 2 = 1111 0000
+>> | Right Shift; move variable value to the right by the specified bits | a >> 2 = 0000 1111
 
 <H2> 7. Logical operation </H2>
 
