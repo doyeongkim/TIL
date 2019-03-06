@@ -30,11 +30,14 @@ At this time, what if other arithmetic operation request signals keep coming in 
 
 <H2> 3. Stack </H2>
 
-LIFO (Last In First Out), FILO (First In Last Out)
+**LIFO** (Last In First Out), **FILO** (First In Last Out)
 
 Ex) Pringles sncak, Mart Cart, etc.
     Web browser history (go back), Undo/Redo, etc.
 
+<div>
+<img width="445" src="https://user-images.githubusercontent.com/29372705/53852323-05edde80-4005-11e9-979f-b2f33dfd73bd.png">
 
+<img width="445" src="https://user-images.githubusercontent.com/29372705/53852336-0d14ec80-4005-11e9-8eb4-a85cbac982cc.png">
 
 
