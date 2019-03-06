@@ -72,10 +72,10 @@ Enqueue means to insert an item into the **back** of the queue, dequeue means re
 
 **Conversions:**
 
-<img width="350" alt="2019-03-06 12 38 09" src="https://user-images.githubusercontent.com/29372705/53854421-c9be7c00-400c-11e9-91c6-ff205b68341c.png">
-
 <div>
-<img width="350" alt="2019-03-06 12 36 12" src="https://user-images.githubusercontent.com/29372705/53854353-8532e080-400c-11e9-8b1a-59c6cc59a4b4.png">
+<img width="300" alt="2019-03-06 12 38 09" src="https://user-images.githubusercontent.com/29372705/53854421-c9be7c00-400c-11e9-91c6-ff205b68341c.png">
 
-<img width="350" alt="2019-03-06 12 36 32" src="https://user-images.githubusercontent.com/29372705/53854354-85cb7700-400c-11e9-94e1-7df03e05cfd6.png">
+<img width="300" alt="2019-03-06 12 36 12" src="https://user-images.githubusercontent.com/29372705/53854353-8532e080-400c-11e9-8b1a-59c6cc59a4b4.png">
+
+<img width="300" alt="2019-03-06 12 36 32" src="https://user-images.githubusercontent.com/29372705/53854354-85cb7700-400c-11e9-94e1-7df03e05cfd6.png">
 </div>
