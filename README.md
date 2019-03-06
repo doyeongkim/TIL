@@ -13,7 +13,22 @@ The major difference between these two is "program" is a group of instructions t
 
 **How CPU (Central Processing Unit) Works**
 
+<img width="445" alt="2019-03-06 10 33 54" src="https://user-images.githubusercontent.com/29372705/53849545-91627200-3ffb-11e9-8eb4-b76812d8f594.png">
+
+Components | Roles
+---------- |------
+ALU (Arithmetic Logic Unit) | Executes all arithmetic and logical operations
+CU (Control Unit) | Decodes the instruction (send data to ALU to execute arithmetic and logical instructions)
+CPU register | Temporary storage for instructions or data
+Bus interface | receive or send data from other devices
 
 
+
+
+
+The control unit fetches (gets) the instruction from memory.
+The control unit decodes the instruction (decides what it means) and directs that the necessary data be moved from memory to the arithmetic/logic unit.
+
+Registers are temporary storage areas for instructions or data. They are not a part of memory; rather they are special additional storage locations that offer the advantage of speed. Registers work under the direction of the control unit to accept, hold, and transfer instructions or data and perform arithmetic or logical comparisons at high speed. The control unit uses a data storage register the way a store owner uses a cash register-as a temporary, convenient place to store what is used in transactions. 
 
 
