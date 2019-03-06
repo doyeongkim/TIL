@@ -28,5 +28,13 @@ The ALU performs arithmetic operations such as addition and subtraction, and log
 
 At this time, what if other arithmetic operation request signals keep coming in while the ALU is under operation? It first needs to complete what it is currently handling, then the following signal is processed. If the other signals continue to come in at this point, it may be more efficient to store these signals somewhere and then pull them out when the situation permits. This temporary storage is called Register. Registers work under the direction of the control unit to accept, hold, and transfer instructions or data and perform arithmetic or logical comparisons at high speed.
 
+<H2> 3. Stack </H2>
+
+LIFO (Last In First Out), FILO (First In Last Out)
+
+Ex) Pringles sncak, Mart Cart, etc.
+    Web browser history (go back), Undo/Redo, etc.
+
+
 
 
