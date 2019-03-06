@@ -93,8 +93,7 @@ Operator | Description | Example
 ^ | XOR; Only one true | (a ^ b) = 0011 0001
 ~ | NOT | (~a) = 1100 0011
 << | Left Shift; move variable value to the left by the specified bits | a << 2 = 1111 0000
- | Right Shift; move variable value to the right by the specified bits | a  2 = 0000 1111
-
+<img width="27" alt="2019-03-06 2 14 40" src="https://user-images.githubusercontent.com/29372705/53857595-3f7d1480-401a-11e9-8a9b-3ea20a293424.png"> | Right Shift; move variable value to the right by the specified bits | <img width="96" alt="2019-03-06 2 14 47" src="https://user-images.githubusercontent.com/29372705/53857597-4146d800-401a-11e9-9c2f-bc835051b791.png">
 
 <H2> 7. Logical operation </H2>
 
