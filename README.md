@@ -97,6 +97,12 @@ Operator | Description | Example
 
 <H2> 7. Logical operation </H2>
 
+Logical operation operates on 2 types of logical values, True or False.
+
+**AND (&&) / OR (||) / NOT (!)**
+
+A | B | A && B| A || B | !A
+--- | --- | --- | --- | ---
 
 
 <H2> 8. Naming Convention <H2>
