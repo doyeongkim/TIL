@@ -42,6 +42,5 @@ Ex) Pringles sncak, Mart Cart, etc.
 </div>
 
 <center>
-<img width="350" alt="2019-03-06 11 52 04" src="https://user-images.githubusercontent.com/29372705/53852711-53b71680-4006-11e9-94c5-e6079daffffb.png">                                                                                                   </center>
-
-
+<img width="350" alt="2019-03-06 11 52 04" src="https://user-images.githubusercontent.com/29372705/53852711-53b71680-4006-11e9-94c5-e6079daffffb.png">
+    </center>
