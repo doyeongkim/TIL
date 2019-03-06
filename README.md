@@ -97,10 +97,18 @@ Operator | Description | Example
 
 <H2> 7. Logical operation </H2>
 
-Logical operation operates on 2 types of logical values, True or False.
+Logical operation operates on 2 types of logical values, _True_ or _False_.
 
 **AND (&&) / OR (||) / NOT (!)**
 
 <img width="300" alt="2019-03-06 2 23 59" src="https://user-images.githubusercontent.com/29372705/53857952-88819880-401b-11e9-8a58-348583ae4e3b.png">
 
 <H2> 8. Naming Convention <H2>
+
+**Pascal Case** (upper camel case) | The first letter of every word in the identifier is upper case, the rest lower case and merged without space.
+----------------------------------------------------------------------------------------------------------------------------
+**Camel Case** (lower camel case) | The first letter of the first word in the identifier is lower case, and all subsequent words use upper case.
+
+
+
+
