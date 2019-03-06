@@ -82,6 +82,14 @@ Enqueue means to insert an item into the **back** of the queue, dequeue means re
 
 <H2> 6. Bitwise operation </H2>
 
+In digital computer programming, a bitwise operation operates on one or more bit patterns or binary numerals at the level of their individual bits. It is a fast and simple action, directly supported by the processor, and is used to manipulate values for comparisons and calculations.
+
+Ex) **a = 0011 1100 / b = 0000 1101**
+
+Operator | Description | Example
+-------- | ----------- | --------
+& | AND; Both true | (a & b) = 0000 1100
+| | OR; Either one true | (a | b) = 0011 1101
 
 
 
