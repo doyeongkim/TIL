@@ -50,7 +50,7 @@ Ex) Pringles sncak, Mart Cart, etc.
 Ex) Bank queue, Container Belt, etc.
     DispatchQueue, NotificationQueue, etc.
 
-<img width="753" alt="2019-03-06 12 07 36" src="https://user-images.githubusercontent.com/29372705/53853385-95e15780-4008-11e9-9af1-f9d7283ac601.png">
+<img width="350" alt="2019-03-06 12 07 36" src="https://user-images.githubusercontent.com/29372705/53853385-95e15780-4008-11e9-9af1-f9d7283ac601.png">
 
 Inserting: **Enqueue** or **Put**
 Removing: **Dequeue* or **Get**
@@ -59,5 +59,5 @@ Removing: **Dequeue* or **Get**
 
 Enqueue means to insert an item into the **back** of the queue, dequeue means removing the **front** item.
 
-<img width="462" alt="2019-03-06 12 08 52" src="https://user-images.githubusercontent.com/29372705/53853402-abef1800-4008-11e9-94b4-40a2bd36d55a.png">
+<img width="350" alt="2019-03-06 12 08 52" src="https://user-images.githubusercontent.com/29372705/53853402-abef1800-4008-11e9-94b4-40a2bd36d55a.png">
 
