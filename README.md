@@ -105,7 +105,7 @@ Logical operation operates on 2 types of logical values, _True_ or _False_.
 
 <H2> 8. Naming Convention <H2>
 
-**8.1 Pascal Case** (upper camel case)
+**8.1 Pascal Case (upper camel case)**
 
 The first letter of every word in the identifier is upper case, the rest lower case and merged without space.
 
@@ -113,7 +113,7 @@ The first letter of every word in the identifier is upper case, the rest lower c
 
 <img width="350" alt="2019-03-06 2 43 36" src="https://user-images.githubusercontent.com/29372705/53858636-5a518800-401e-11e9-8f77-f5fbd6150af7.png">
 
-**8.2 Camel Case** (lower camel case)
+**8.2 Camel Case (lower camel case)**
 
 The first letter of the first word in the identifier is lower case, and all subsequent words use upper case.
 
