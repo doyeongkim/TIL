@@ -9,4 +9,4 @@ The major difference between these two is "program" is a group of instructions t
 
 **Memory Hierarchy**
 
-![image](https://user-images.githubusercontent.com/29372705/53848587-409d4a00-3ff8-11e9-99f5-d49467b7b91b.png)
+<img width="200" src="https://user-images.githubusercontent.com/29372705/53848587-409d4a00-3ff8-11e9-99f5-d49467b7b91b.png">
