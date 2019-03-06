@@ -43,3 +43,14 @@ Ex) Pringles sncak, Mart Cart, etc.
 <img width="350" alt="2019-03-06 11 52 04" src="https://user-images.githubusercontent.com/29372705/53852711-53b71680-4006-11e9-94c5-e6079daffffb.png">
 </div>
 
+<H2> 4. Queue </H2>
+
+**FIFO** (First In First Out), **LILO** (Last In Last Out)
+
+Ex) Bank queue, Container Belt, etc.
+    DispatchQueue, NotificationQueue, etc.
+
+<div>
+    
+    </div>
+
