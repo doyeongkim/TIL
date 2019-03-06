@@ -105,9 +105,17 @@ Logical operation operates on 2 types of logical values, _True_ or _False_.
 
 <H2> 8. Naming Convention <H2>
 
-**Pascal Case** (upper camel case) - The first letter of every word in the identifier is upper case, the rest lower case and merged without space.
+**Pascal Case** (upper camel case): 
+The first letter of every word in the identifier is upper case, the rest lower case and merged without space.
 
-**Camel Case** (lower camel case) - The first letter of the first word in the identifier is lower case, and all subsequent words use upper case.
+__Swift__ use pascal case for _filename, class, struct, enum, protocol, and type_.
+
+
+
+**Camel Case** (lower camel case):
+The first letter of the first word in the identifier is lower case, and all subsequent words use upper case.
+
+__Swift__ use all camel case for _variable name, function, method, and so on_ except the pascal case.
 
 
 
