@@ -106,10 +106,7 @@ The kernel allows the application data to flow into the memory. It also decides 
 
 12. __clear__ - to clear screen
 
-<div>
-   <img width="300" alt="2019-03-07 8 23 53" src="https://user-images.githubusercontent.com/29372705/53953573-08d8f400-4117-11e9-80e8-b9deae5d3dc5.png">
-<img width="300" alt="2019-03-07 8 24 21" src="https://user-images.githubusercontent.com/29372705/53953575-08d8f400-4117-11e9-97a9-4907b8c78b09.png">
-   </div>
+<img width="350" alt="2019-03-07 8 24 21" src="https://user-images.githubusercontent.com/29372705/53953575-08d8f400-4117-11e9-97a9-4907b8c78b09.png">
 
 13. __chmod__ - to make a file executable and to change the permissions granted to it
 
