@@ -134,3 +134,7 @@ Here the digits 7, 5, and 4 each individually represent the permissions for the 
 - __0__ stands for __"no permission"__
 
 So __7__ is the combination of permissions __4+2+1__ (read, write, and execute), __5__ is __4+0+1__ (read, no write, and execute), and __4__ is __4+0+0__ (read, no write, and no execute).
+
+<h2> 7. Vi(m) </h2>
+
+<img width="300" alt="2019-03-07 9 04 09" src="https://user-images.githubusercontent.com/29372705/53955581-bef30c80-411c-11e9-9b3a-db1e40a09355.png">
