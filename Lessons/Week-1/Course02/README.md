@@ -30,4 +30,21 @@ cat /etc/shells - output a list of the available shells
 
 <h2> 6. Kernel </h2>
 
+**What is Kernel?**
+
+A Kernel is a center component of an operating system (OS). It is an interface between the user and the software system (means, it is and interface between hardware components and software applications).
+
+**What is its function?**
+
+Hardware components are those which we can touch (mouse, speaker, hard disk, etc.) and we humans cannot directly interact with the hardware to get things done. Softwares are those pieces of programs which we cannot touch but see and  we can work with them because they have a user-friendly interface. That is why we make use of software. That is why they are built in user-friendly interfaces. These softwares do the work of taking input from us, interact with the required hardware and produce specific output and display it. So, this is what a kernel does. 
+
+Kernel makes the software interact with the hardware to get a specific task done. It facilitates a communication between an application and a hardware according to the user input. The functions of a kernel are not limited as an interface. It is the most important component of OS. It starts when the computer starts and it is kept loaded until it's turned off. It decides the amount of resources (Hard Disk, RAM, GPU, etc.) to be used by every application. Every program must get a limited amount of resources so that all the other programs  are run well and are not interrupted.
+
+The kernel allows the application data to flow into the memory. It also decides in what order the programs will be executed. The kernel has separate space in memory which allows it to function independently. If the user data interfaces with the functioning of the kernel, it may cause instability and ultimate system failure. It acts as a central authority which guides memory and keeps an eye on all the hardware and software data flow.
+
+<img width="350" alt="2019-03-07 6 14 31" src="https://user-images.githubusercontent.com/29372705/53945401-e807a300-4104-11e9-9c86-2129a87c1746.png">
+
+
+
+
 
