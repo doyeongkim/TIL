@@ -98,15 +98,17 @@ The kernel allows the application data to flow into the memory. It also decides 
 
 10. __vi / nano__ - text editors
 
-<div>
-<img width="350" alt="2019-03-07 8 16 11" src="https://user-images.githubusercontent.com/29372705/53953113-e397b600-4115-11e9-8e3d-0282d88a54be.png">
 <img width="350" alt="2019-03-07 8 14 56" src="https://user-images.githubusercontent.com/29372705/53953118-e692a680-4115-11e9-9760-50c159ec9854.png">
-</div>
 
 11. __cat__ - to display the contents of a file
 
 <img width="350" alt="2019-03-07 8 17 51" src="https://user-images.githubusercontent.com/29372705/53953224-1e99e980-4116-11e9-91e7-2258e081180f.png">
 
-12. __
+12. __clear__ - to clear screen
+
+<div>
+   <img width="300" alt="2019-03-07 8 23 53" src="https://user-images.githubusercontent.com/29372705/53953573-08d8f400-4117-11e9-80e8-b9deae5d3dc5.png">
+<img width="300" alt="2019-03-07 8 24 21" src="https://user-images.githubusercontent.com/29372705/53953575-08d8f400-4117-11e9-97a9-4907b8c78b09.png">
+   </div>
 
 
