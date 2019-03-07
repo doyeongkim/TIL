@@ -29,10 +29,9 @@ Mar 7, 2019 (Thur)
 <img width="421" alt="2019-03-07 5 36 13" src="https://user-images.githubusercontent.com/29372705/53943025-8f81d700-40ff-11e9-9694-a0dd1f5fdea7.png">
 
 - Perform as an interpreter to facilitate communicate between the user and OS (kernel)
+- User (Command) -> Shell (Interpret) -> Kernel (Perform command & send result) -> Shell (Interprete) -> User (Check result)
 
-User (Command) -> Shell (Interpret) -> Kernel (Perform command then send results) -> Shell (Interprete) -> User (Check results)
-
-<img width="300" alt="2019-03-07 7 15 31" src="https://user-images.githubusercontent.com/29372705/53949457-69fbca00-410d-11e9-8776-05d4599fdf46.png">
+<img width="300" alt="2019-03-07 7 21 58" src="https://user-images.githubusercontent.com/29372705/53949877-50a74d80-410e-11e9-99e0-2246f8274311.png">
 
 <h2> 6. Kernel </h2>
 
