@@ -4,7 +4,7 @@
 
 <h2> Navigation </h2>
 
-<h3> Introduction </h3>
+<h3> Week 1 - Introduction </h3>
 
 1. [Computer Introduction](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-1/Course01)
 2. [Shell / Terminal](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-1/Course02/README.md)
