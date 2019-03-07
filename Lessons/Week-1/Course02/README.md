@@ -49,6 +49,22 @@ The kernel allows the application data to flow into the memory. It also decides 
 
 <img width="280" alt="2019-03-07 6 14 31" src="https://user-images.githubusercontent.com/29372705/53945401-e807a300-4104-11e9-9c86-2129a87c1746.png">
 
+<h2> 6. Command line </h2>
+
+**Basic Commands**
+
+1. pwd - to know which directory you are in
+2. ls - to know what files are in the directory you are in
+   ls -a - show all hidden files
+3. cd - to go to a directory
+
+<div>
+  <img width="200" alt="2019-03-07 7 29 24" src="https://user-images.githubusercontent.com/29372705/53950385-5ea99e00-410f-11e9-942e-84770726456a.png">
+  <img width="200" alt="2019-03-07 7 32 46" src="https://user-images.githubusercontent.com/29372705/53950648-f909e180-410f-11e9-8257-4ec0ba011a18.png">
+<img width="200" alt="2019-03-07 7 33 18" src="https://user-images.githubusercontent.com/29372705/53950649-f909e180-410f-11e9-84b2-22da5a5ff983.png">
+  </div>
+
+
 
 
 
