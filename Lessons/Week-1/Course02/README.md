@@ -57,11 +57,13 @@ The kernel allows the application data to flow into the memory. It also decides 
 2. ls - to know what files are in the directory you are in
    ls -a - show all hidden files
 3. cd - to go to a directory
+   cd ~ - to go to root folder 
+   cd .. - to go back to parent folder
 
 <div>
   <img width="200" alt="2019-03-07 7 29 24" src="https://user-images.githubusercontent.com/29372705/53950385-5ea99e00-410f-11e9-942e-84770726456a.png">
-  <img width="200" alt="2019-03-07 7 32 46" src="https://user-images.githubusercontent.com/29372705/53950648-f909e180-410f-11e9-8257-4ec0ba011a18.png">
-<img width="200" alt="2019-03-07 7 33 18" src="https://user-images.githubusercontent.com/29372705/53950649-f909e180-410f-11e9-84b2-22da5a5ff983.png">
+  <img width="320" alt="2019-03-07 7 32 46" src="https://user-images.githubusercontent.com/29372705/53950648-f909e180-410f-11e9-8257-4ec0ba011a18.png">
+<img width="326" alt="2019-03-07 7 37 36" src="https://user-images.githubusercontent.com/29372705/53950883-8c431700-4110-11e9-9ba6-0e0d7b2f3fc2.png">
   </div>
 
 
