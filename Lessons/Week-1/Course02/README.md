@@ -23,12 +23,16 @@ Mar 7, 2019 (Thur)
 
 <h2> 5. Shell </h2>
 
-echo $SHELL - output the shell currently in use
-cat /etc/shells - output a list of the available shells
+- echo $SHELL - output the shell currently in use
+- cat /etc/shells - output a list of the available shells
 
 <img width="421" alt="2019-03-07 5 36 13" src="https://user-images.githubusercontent.com/29372705/53943025-8f81d700-40ff-11e9-9694-a0dd1f5fdea7.png">
 
+- Perform as an interpreter to facilitate communicate between the user and OS (kernel)
 
+User (Command) -> Shell (Interpret) -> Kernel (Perform command then send results) -> Shell (Interprete) -> User (Check results)
+
+<img width="300" alt="2019-03-07 7 15 31" src="https://user-images.githubusercontent.com/29372705/53949457-69fbca00-410d-11e9-8776-05d4599fdf46.png">
 
 <h2> 6. Kernel </h2>
 
@@ -44,7 +48,7 @@ Kernel makes the software interact with the hardware to get a specific task done
 
 The kernel allows the application data to flow into the memory. It also decides in what order the programs will be executed. The kernel has separate space in memory which allows it to function independently. If the user data interfaces with the functioning of the kernel, it may cause instability and ultimate system failure. It acts as a central authority which guides memory and keeps an eye on all the hardware and software data flow.
 
-<img width="300" alt="2019-03-07 6 14 31" src="https://user-images.githubusercontent.com/29372705/53945401-e807a300-4104-11e9-9c86-2129a87c1746.png">
+<img width="280" alt="2019-03-07 6 14 31" src="https://user-images.githubusercontent.com/29372705/53945401-e807a300-4104-11e9-9c86-2129a87c1746.png">
 
 
 
