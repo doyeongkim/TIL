@@ -42,7 +42,7 @@ Kernel makes the software interact with the hardware to get a specific task done
 
 The kernel allows the application data to flow into the memory. It also decides in what order the programs will be executed. The kernel has separate space in memory which allows it to function independently. If the user data interfaces with the functioning of the kernel, it may cause instability and ultimate system failure. It acts as a central authority which guides memory and keeps an eye on all the hardware and software data flow.
 
-<img width="350" alt="2019-03-07 6 14 31" src="https://user-images.githubusercontent.com/29372705/53945401-e807a300-4104-11e9-9c86-2129a87c1746.png">
+<img width="300" alt="2019-03-07 6 14 31" src="https://user-images.githubusercontent.com/29372705/53945401-e807a300-4104-11e9-9c86-2129a87c1746.png">
 
 
 
