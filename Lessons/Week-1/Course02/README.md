@@ -111,4 +111,29 @@ The kernel allows the application data to flow into the memory. It also decides 
 <img width="300" alt="2019-03-07 8 24 21" src="https://user-images.githubusercontent.com/29372705/53953575-08d8f400-4117-11e9-97a9-4907b8c78b09.png">
    </div>
 
+13. __chmod__ - to make a file executable and to change the permissions granted to it
 
+Let's say you are the owner of a file named __myfile__, and you want to set its permissions so that:
+
+- the user can read, write, and execute it;
+- members of your group can read and execute it; and
+- others may only read it
+
+This command will do the trick:
+
+      chmod u=rwx,g=rx,o=r myfile
+      
+This example uses symbolic permissions notation. The letters u, g, and o stand for "user", "group", and "other". The equals sign ("=") means "set the permissions exactly like this," and the letters "r", "w", and "x" stand for "read", "write", and "execute", respectively. The commas separate the different classes of permissions, and there are no spaces in between them.
+
+Here is the equivalent command using __octal__ permissions notation:
+
+      chmod 754 myfile
+
+Here the digits 7, 5, and 4 each individually represent the permissions for the user, group, and others, in that order. Each digit is a combination of the numbers 4, 2, 1, and 0:
+
+- __4__ stands for __"read"__,
+- __2__ stands for __"write"__,
+- __1__ stands for __"execute"__,
+- __0__ stands for __"no permission"__
+
+So __7__ is the combination of permissions __4+2+1__ (read, write, and execute), __5__ is __4+0+1__ (read, no write, and execute), and __4__ is __4+0+0__ (read, no write, and no execute).
