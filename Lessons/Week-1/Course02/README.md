@@ -65,11 +65,12 @@ The kernel allows the application data to flow into the memory. It also decides 
   <img width="320" alt="2019-03-07 7 32 46" src="https://user-images.githubusercontent.com/29372705/53950648-f909e180-410f-11e9-8257-4ec0ba011a18.png">
 <img width="326" alt="2019-03-07 7 37 36" src="https://user-images.githubusercontent.com/29372705/53950883-8c431700-4110-11e9-9ba6-0e0d7b2f3fc2.png">
   </div>
-
-
+  
+<p>
 4. __mkdir & rmdir__ - to create and remove directory (But rmdir can only be used to delete an empty directory. To delete a directory containing files, use rm)
 
 <img width="350" alt="2019-03-07 7 44 04" src="https://user-images.githubusercontent.com/29372705/53951258-68340580-4111-11e9-9e21-491fed22633f.png">
+</p>
 
 5. __rm__ - to delete files and directories
    __rm -r directory__ - to delete directory containing files
