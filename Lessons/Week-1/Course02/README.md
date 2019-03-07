@@ -28,6 +28,8 @@ cat /etc/shells - output a list of the available shells
 
 <img width="421" alt="2019-03-07 5 36 13" src="https://user-images.githubusercontent.com/29372705/53943025-8f81d700-40ff-11e9-9694-a0dd1f5fdea7.png">
 
+
+
 <h2> 6. Kernel </h2>
 
 **What is Kernel?**
