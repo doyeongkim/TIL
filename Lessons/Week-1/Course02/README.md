@@ -66,8 +66,21 @@ The kernel allows the application data to flow into the memory. It also decides 
 <img width="326" alt="2019-03-07 7 37 36" src="https://user-images.githubusercontent.com/29372705/53950883-8c431700-4110-11e9-9ba6-0e0d7b2f3fc2.png">
   </div>
 
+4. mkdir & rmdir - to create and remove directory (But rmdir can only be used to delete an empty directory. To delete a directory containing files, use rm)
 
+<img width="350" alt="2019-03-07 7 44 04" src="https://user-images.githubusercontent.com/29372705/53951258-68340580-4111-11e9-9e21-491fed22633f.png">
 
+5. rm - to delete files and directories
+   rm -r directory - to delete directory containing files
 
+<img width="350" alt="2019-03-07 7 51 04" src="https://user-images.githubusercontent.com/29372705/53951693-61f25900-4112-11e9-9a5c-8b08738a962b.png">
 
+6. touch - to create a file
+
+<img width="350" alt="2019-03-07 7 52 43" src="https://user-images.githubusercontent.com/29372705/53951795-9c5bf600-4112-11e9-918f-71e7cf91936f.png">
+
+7. man & --help - To know more about a command and how to use it
+
+<img width="350" alt="2019-03-07 7 55 54" src="https://user-images.githubusercontent.com/29372705/53951993-0f656c80-4113-11e9-928e-7e3794806d3f.png">
+<img width="350" alt="2019-03-07 7 55 32" src="https://user-images.githubusercontent.com/29372705/53952000-12605d00-4113-11e9-8cd6-5ea915fdecad.png">
 
