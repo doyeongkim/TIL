@@ -1,6 +1,6 @@
 <h1> FastCampus iOS Programming School </h1>
 
-<img width="450" alt="2019-03-07 9 11 58" src="https://user-images.githubusercontent.com/29372705/53955969-b51dd900-411d-11e9-9969-a5afba044a53.png">
+<img width="300" alt="2019-03-07 9 11 58" src="https://user-images.githubusercontent.com/29372705/53955969-b51dd900-411d-11e9-9969-a5afba044a53.png">
 
 <h2> Navigation </h2>
 
