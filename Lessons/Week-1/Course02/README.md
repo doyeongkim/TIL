@@ -51,7 +51,7 @@ The kernel allows the application data to flow into the memory. It also decides 
 
 <h2> 6. Command line </h2>
 
-**Basic Commands**
+<h3>Basic Commands</h3>
 
 1. __pwd__ - to know which directory you are in
 2. __ls__ - to know what files are in the directory you are in
@@ -87,3 +87,26 @@ The kernel allows the application data to flow into the memory. It also decides 
 <img width="350" alt="2019-03-07 7 55 54" src="https://user-images.githubusercontent.com/29372705/53951993-0f656c80-4113-11e9-928e-7e3794806d3f.png">
 <img width="350" alt="2019-03-07 7 55 32" src="https://user-images.githubusercontent.com/29372705/53952000-12605d00-4113-11e9-8cd6-5ea915fdecad.png">
 </div>
+
+8. __cp__ - to copy files
+
+<img width="350" alt="2019-03-07 8 04 17" src="https://user-images.githubusercontent.com/29372705/53952500-3a9c8b80-4114-11e9-906e-27419a6f207e.png">
+
+9. __mv__ - to move files / rename files
+
+<img width="350" alt="2019-03-07 8 08 57" src="https://user-images.githubusercontent.com/29372705/53952712-e219be00-4114-11e9-813b-5547d42dbbb9.png">
+
+10. __vi / nano__ - text editors
+
+<div>
+<img width="350" alt="2019-03-07 8 16 11" src="https://user-images.githubusercontent.com/29372705/53953113-e397b600-4115-11e9-8e3d-0282d88a54be.png">
+<img width="350" alt="2019-03-07 8 14 56" src="https://user-images.githubusercontent.com/29372705/53953118-e692a680-4115-11e9-9760-50c159ec9854.png">
+</div>
+
+11. __cat__ - to display the contents of a file
+
+<img width="350" alt="2019-03-07 8 17 51" src="https://user-images.githubusercontent.com/29372705/53953224-1e99e980-4116-11e9-91e7-2258e081180f.png">
+
+12. __
+
+
