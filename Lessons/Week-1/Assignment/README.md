@@ -17,7 +17,15 @@ Mar 8 (Fri)
 
 <h2> 2. Git </h2> 
 
-- Create a Github repository and edit README.md file, then reupload it to GitHub (Using Vi(m) editor)
+Create a Github repository and edit README.md file, then reupload it to GitHub (Using Vi(m) editor).
 
->>
+- Create GitHub repository:
+
+<img width="300" alt="2019-03-08 5 05 54" src="https://user-images.githubusercontent.com/29372705/54015927-a3434100-41c4-11e9-8653-f69ec6b5b690.png">
+
+- Clone onto local Desktop
+
+
+
+
 
