@@ -17,25 +17,25 @@ Mar 7, 2019 (Thur)
 
 <h2> 2. VCS Type </h2>
 
-**Original Version Control**
+- **Original Version Control**
 
-- Save seperately after copying files
+ - Save seperately after copying files
 
-**LVCS (Local Version Control System)**
+- **LVCS (Local Version Control System)**
 
-- Manage versions individually: Difficult to collaborate and all history is lost if the person's data goes wrong.
+ - Manage versions individually: Difficult to collaborate and all history is lost if the person's data goes wrong.
 
-**CVCS (Central Version Control System)**
+- **CVCS (Central Version Control System)**
  
-- Manage storing multiple clients' files in one server
-- Largely afftected by central server
-- Typically CVS / SVN
+ - Manage storing multiple clients' files in one server
+ - Largely afftected by central server
+ - Typically CVS / SVN
 
-**DVCS (Distributed Version Control System)**
+- **DVCS (Distributed Version Control System)**
 
-- Have both local and remote repository separately. Can have multiple remote repositories.
-- Have powerful branch merging function compared to the original VCS, and not dependent on the central server
-- Typically Git / Mercurial
+ - Have both local and remote repository separately. Can have multiple remote repositories.
+ - Have powerful branch merging function compared to the original VCS, and not dependent on the central server
+ - Typically Git / Mercurial
 
 <h2> 3. Git </h2>
 
@@ -47,9 +47,9 @@ Mar 7, 2019 (Thur)
     - Perfect distribution
     - Useful for large project such as Linux kernel (in speed or data size)
 
-<h3> SVN, Mercurial - Delta </h3>
+**SVN, Mercurial - Delta**
 
-<img width="350" alt="2019-03-08 3 21 37" src="https://user-images.githubusercontent.com/29372705/54011458-fbbf1200-41b5-11e9-9cf0-588bdf64682b.png">
+    <img width="350" alt="2019-03-08 3 21 37" src="https://user-images.githubusercontent.com/29372705/54011458-fbbf1200-41b5-11e9-9cf0-588bdf64682b.png">
 
 <h3> Git - Snapshot </h3>
 
