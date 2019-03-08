@@ -13,7 +13,7 @@ Mar 8 (Fri)
 
 - Apply 'Oh My Zsh' on Zsh
 
-<img width="350" alt="2019-03-08 4 55 36" src="https://user-images.githubusercontent.com/29372705/54015440-0df37d00-41c3-11e9-90e2-299fb155698c.png">
+<img width="200" alt="2019-03-08 4 55 36" src="https://user-images.githubusercontent.com/29372705/54015440-0df37d00-41c3-11e9-90e2-299fb155698c.png">
 
 <h2> 2. Git </h2> 
 
@@ -21,11 +21,11 @@ Create a Github repository and edit README.md file, then reupload it to GitHub (
 
         1. Create GitHub repository:
 
-<img width="300" height="300" alt="2019-03-08 5 05 54" src="https://user-images.githubusercontent.com/29372705/54015927-a3434100-41c4-11e9-8653-f69ec6b5b690.png">
+<img width="250" alt="2019-03-08 5 05 54" src="https://user-images.githubusercontent.com/29372705/54015927-a3434100-41c4-11e9-8653-f69ec6b5b690.png">
 
        2. Clone onto local Desktop:
 
-<img width="300" height="300" alt="2019-03-08 5 11 46" src="https://user-images.githubusercontent.com/29372705/54016145-56139f00-41c5-11e9-8570-7412f1489150.png">
+<img width="2500" alt="2019-03-08 5 11 46" src="https://user-images.githubusercontent.com/29372705/54016145-56139f00-41c5-11e9-8570-7412f1489150.png">
 
        3. Create new folder locally and edit the file using Vi(m):
 
