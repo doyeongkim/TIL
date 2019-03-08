@@ -47,7 +47,7 @@ Mar 7, 2019 (Thur)
     - Perfect distribution
     - Useful for large project such as Linux kernel (in speed or data size)
 
--SVN, Mercurial - Delta_
+_SVN, Mercurial - Delta_
 
 <img width="350" alt="2019-03-08 3 21 37" src="https://user-images.githubusercontent.com/29372705/54011458-fbbf1200-41b5-11e9-9cf0-588bdf64682b.png">
 
@@ -59,7 +59,6 @@ _Three states & main sections_
 
 <div>
 <img width="350" alt="2019-03-08 3 23 28" src="https://user-images.githubusercontent.com/29372705/54011508-2741fc80-41b6-11e9-9ea2-62440feb28b9.png">
-
 
 <img width="350" alt="2019-03-08 3 24 39" src="https://user-images.githubusercontent.com/29372705/54011561-53f61400-41b6-11e9-8063-06cadfc412ff.png">
 </div>
