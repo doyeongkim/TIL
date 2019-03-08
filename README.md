@@ -4,7 +4,7 @@
 
 <h2> Navigation </h2>
 
-This is notes what I have learnt through these courses. This is my key first step forwards to become iOS developer! :happy:
+This is notes what I have learnt through these courses. This is my key first step forwards to become iOS developer! :laughing:
 
 <h3> Week 1 - Introduction </h3>
 
