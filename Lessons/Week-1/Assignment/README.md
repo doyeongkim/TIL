@@ -19,9 +19,9 @@ Mar 8 (Fri)
 
 Create a Github repository and edit README.md file, then reupload it to GitHub (Using Vi(m) editor).
 
-    1. Create GitHub repository:
+1. Create GitHub repository:
 
-<img width="300" height="300" alt="2019-03-08 5 05 54" src="https://user-images.githubusercontent.com/29372705/54015927-a3434100-41c4-11e9-8653-f69ec6b5b690.png">
+        <img width="300" height="300" alt="2019-03-08 5 05 54" src="https://user-images.githubusercontent.com/29372705/54015927-a3434100-41c4-11e9-8653-f69ec6b5b690.png">
 
     2. Clone onto local Desktop
 
