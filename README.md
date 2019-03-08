@@ -4,8 +4,10 @@
 
 <h2> Navigation </h2>
 
+This is notes what I have learnt through these courses. This is my key first step forwards to become iOS developer! :happy:
+
 <h3> Week 1 - Introduction </h3>
 
 1. [Computer Introduction](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-1/Course01)
 2. [Shell / Terminal](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-1/Course02/README.md)
-3. Git / Markdown
+3. [Git / Markdown](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-1/Course03/README.md)
