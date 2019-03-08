@@ -11,10 +11,13 @@ Mar 8 (Fri)
 <img width="324" alt="2019-03-08 4 48 59" src="https://user-images.githubusercontent.com/29372705/54015131-28792680-41c2-11e9-8308-0f03edfc4072.png">
 </div>
 
-- Apply Oh My Zsh on Zsh
+- Apply 'Oh My Zsh' on Zsh
 
-
+<img width="350" alt="2019-03-08 4 55 36" src="https://user-images.githubusercontent.com/29372705/54015440-0df37d00-41c3-11e9-90e2-299fb155698c.png">
 
 <h2> 2. Git </h2> 
 
 - Create a Github repository and edit README.md file, then reupload it to GitHub (Using Vi(m) editor)
+
+>>
+
