@@ -25,13 +25,13 @@ Create a Github repository and edit README.md file, then reupload it to GitHub (
 <img width="250" alt="2019-03-08 5 05 54" src="https://user-images.githubusercontent.com/29372705/54015927-a3434100-41c4-11e9-8653-f69ec6b5b690.png">
 <br >
 
-       2. Clone onto local Desktop:
+> 2. Clone onto local Desktop:
 <br >
 
 <img width="250" alt="2019-03-08 5 11 46" src="https://user-images.githubusercontent.com/29372705/54016145-56139f00-41c5-11e9-8570-7412f1489150.png">
 <br >
 
-       3. Create new folder locally and edit the file using Vi(m):
+> 3. Create new folder locally and edit the file using Vi(m):
 <br >
 
 <div>
@@ -40,7 +40,7 @@ Create a Github repository and edit README.md file, then reupload it to GitHub (
 </div>
 <br >
 
-       4. add, status, commit, push:
+> 4. add, status, commit, push:
 <br >
 
 <div>
@@ -49,7 +49,7 @@ Create a Github repository and edit README.md file, then reupload it to GitHub (
 </div>
 <br >
 
-       5. pull:
+> 5. pull:
 <br >
 
 <img width="320" alt="2019-03-08 5 26 43" src="https://user-images.githubusercontent.com/29372705/54016788-688ed800-41c7-11e9-91c8-d839b7e93f37.png">
