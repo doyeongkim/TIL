@@ -24,8 +24,9 @@ Create a Github repository and edit README.md file, then reupload it to GitHub (
 <img width="250" alt="2019-03-08 5 05 54" src="https://user-images.githubusercontent.com/29372705/54015927-a3434100-41c4-11e9-8653-f69ec6b5b690.png">
 
        2. Clone onto local Desktop:
+<br >
 
-<img width="2500" alt="2019-03-08 5 11 46" src="https://user-images.githubusercontent.com/29372705/54016145-56139f00-41c5-11e9-8570-7412f1489150.png">
+<img width="250" alt="2019-03-08 5 11 46" src="https://user-images.githubusercontent.com/29372705/54016145-56139f00-41c5-11e9-8570-7412f1489150.png">
 
        3. Create new folder locally and edit the file using Vi(m):
 
