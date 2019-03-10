@@ -1,4 +1,4 @@
-Mar 8 (Fri)
+Mar 8, 2019 (Fri)
 <h2> Assignments </h2>
 
 <h2> 1. Shell </h2>
