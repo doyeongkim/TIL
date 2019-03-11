@@ -15,3 +15,8 @@ These are my summarized notes I have learnt through this course. This is my key 
 3. [Git / Markdown](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-1/Course03/README.md)
 4. [Assignment](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-1/Assignment/README.md)
 
+<h3> Week 2 - Swift Basic Grammar </h3>
+
+1. Variable, Interger, 자료형, 타입추론
+2. 기본 연산자, 함수
+
