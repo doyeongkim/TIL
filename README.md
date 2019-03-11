@@ -17,6 +17,6 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 <h3> Week 2 - Swift Basic Grammar </h3>
 
-1. Variable, Interger, 자료형, 타입추론
+1. Variable, Interger, Type, 타입추론
 2. 기본 연산자, 함수
 
