@@ -2,8 +2,6 @@ import UIKit
 
 //  1. 첨부된 이미지를 보고 상속을 이용해 구현해보기
 
-<img width="230" alt="1번 과제" src="https://user-images.githubusercontent.com/29372705/54799611-45712780-4ca1-11e9-9735-cf095286dc40.png">
-
 class Animal {
     let brain: Bool
     var legs: Int
@@ -64,8 +62,6 @@ cat.legs        //4
  각각의 넓이, 둘레, 부피를 구하는 프로퍼티와 메서드 구현하기
  (클래스 구현 연습)
  */
-
-![2번 과제](https://user-images.githubusercontent.com/29372705/54799647-74879900-4ca1-11e9-8865-cd35a9b04ff3.png)
 
 //class Square {
 //    var side = 5
