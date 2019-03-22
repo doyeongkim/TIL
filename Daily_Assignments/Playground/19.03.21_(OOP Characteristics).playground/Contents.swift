@@ -3,73 +3,59 @@ import UIKit
 //  1. 첨부된 이미지를 보고 상속을 이용해 구현해보기
 
 class Animal {
-    let brain = true
-    var legs = 0
+    let brain: Bool
+    var legs: Int
+    
+    init(brain: Bool = true, legs: Int = 0) {
+        self.brain = brain
+        self.legs = legs
+    }
 }
 
 class Human: Animal {
-    override var legs: Int {
-        get {
-            return super.legs
-        }
-        set {
-            super.legs = newValue
-        }
+    init(legs: Int) {
+        super.init(legs: legs)
     }
 }
 
 class Pet: Animal {
-    override var legs: Int {
-        get {
-            return super.legs
-        }
-        set {
-            super.legs = newValue
-        }
-    }
+    var fleas: Int
     
-    var fleas = 0
+    init(legs: Int = 4, fleas: Int) {
+        self.fleas = fleas
+        super.init(legs: legs)
+    }
 }
 
-
 class Dog: Pet {
-    override var fleas: Int {
-        get {
-            return super.fleas
-        }
-        set {
-            super.fleas = newValue
-        }
+    init(fleas: Int) {
+        super.init(fleas: fleas)
     }
 }
 
 class Cat: Pet {
-    override var fleas: Int {
-        get {
-            return super.fleas
-        }
-        set {
-            super.fleas = newValue
-        }
+    init(fleas: Int) {
+        super.init(fleas: fleas)
     }
 }
 
-let human = Human()
-human.legs = 2
-human.legs
 
-let pet = Pet()
-pet.legs = 4
-pet.legs
-pet.fleas
+let animal = Animal(brain: true, legs: 0)
 
-let dog = Dog()
-dog.fleas = 8
-dog.fleas
+let human = Human(legs: 2)
+human.legs      //2
 
-let cat = Cat()
-cat.fleas = 4
-cat.fleas
+let pet = Pet(legs: 4, fleas: 0)
+pet.legs        //4
+pet.fleas       //0
+
+let dog = Dog(fleas: 8)
+dog.fleas       //8
+dog.legs        //4
+
+let cat = Cat(fleas: 4)
+cat.fleas       //4
+cat.legs        //4
 
 
 
