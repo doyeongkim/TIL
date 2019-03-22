@@ -6,7 +6,6 @@ Mar 11, 2019 (Mon)
 
 - **Free Function for log output**
 
-Ex)
 
 ```swift
 print(3.14)
@@ -31,7 +30,6 @@ print("숫자 " + String(num))
 
   - /* */   : Multi line comment ('Nested' is possible)
 
-  Ex)
 
   ```swift
   print("Hello, world!")
@@ -54,7 +52,6 @@ print("숫자 " + String(num))
   - It is an option to put semicolon at the end of each line
   - A semicolon is required if you want to use multiple statements (multiple commands) on a line.
 
-  Ex)
 
   ```swift
   print(1); print(2); print(3);
@@ -74,7 +71,6 @@ Constants and variables are containers that contain values, attributes, etc. for
 
 Constants and variables must be declared before they’re used. We declare constants with the `let` keyword and variables with the `var` keyword.
 
-Ex)
 
 ```swift
 let maximumNumberOfLoginAttempts = 10
@@ -90,7 +86,6 @@ currentLoginAttempt = 1		// currentLoginAttempt = 1
 
 We can **declare multiple constants or multiple variables** on a single line, separated by commas:
 
-Ex)
 
 ```swift
 var x = 0.0, y = 0.0, z = 0.0
@@ -105,7 +100,6 @@ z = 3
 
 In addition to English, most of characters including unicode can be used to name the constants and variables.
 
-Ex)
 
 ```swift
 let π = 3.14159
@@ -148,7 +142,6 @@ print(`let`)
 
   You can write a type annotation by placing a *colon(;)* after the constant or variable name, followed by a *space*, followed by the *name of the type* to use.
 
-  Ex)
 
   ```swift
   let year: Int = 2019
@@ -168,7 +161,6 @@ print(`let`)
 
   Inferring the type of a variable through the type of value used for initialization when declaring a variable.
 
-  Ex)
 
   ```swift
   var weight = 6.4
