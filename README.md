@@ -8,6 +8,10 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 <h2> Navigation </h2>
 
+<h3> Daily Assignment <Swift> </h3>
+
+[Swift Coding Tasks](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Task/Daily_Assignment)
+
 <h3> Week 1 - Introduction </h3>
 
 1. [Computer Introduction](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-1/Course01)
