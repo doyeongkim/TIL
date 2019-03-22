@@ -54,6 +54,9 @@ a <= b
 ```
 
 ```swift
+
+// String Comparison
+
 "iOS" > "Apple"       //true
 "Application" > "Steve Jobs"        // false
 "Application2" > "Application1"       //true
