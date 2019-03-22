@@ -4,7 +4,9 @@ Mar 11, 2019 (Mon)
 
 ### 1. Hello, world!
 
-<br />
+
+
+
 
 - **Free Function for log output**
 
@@ -22,15 +24,19 @@ print("숫자 \(num)")
 print("숫자 " + String(num))
 ```
 
-<br />
+
+
+
 
 - **Comment**
 
   - //        :  1 line comment (Command + /)
-
   - ///       :  1 line comment + [Quick Help Markup](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/SymbolDocumentation.html)
-
   - /* */   : Multi line comment ('Nested' is possible)
+
+
+
+
 
 
   ```swift
@@ -47,10 +53,11 @@ print("숫자 " + String(num))
    but is written over multiple lines. */
   ```
 
-<br />
+
+
+
 
 - **Semicolon (;)**
-
   - It is an option to put semicolon at the end of each line
   - A semicolon is required if you want to use multiple statements (multiple commands) on a line.
 
@@ -62,16 +69,24 @@ print("숫자 " + String(num))
   //print(3);
   ```
 
-<br />
+
+
+
 
 ### 2. Constants & Variables
 
 Constants and variables are containers that contain values, attributes, etc. for the current data.
 
+
+
 - **Constants**  : The value of a *constant* can’t be changed once it’s set
 - **Variables**    : A *variable* can be set to a different value in the future
 
+
+
 Constants and variables must be declared before they’re used. We declare constants with the `let` keyword and variables with the `var` keyword.
+
+
 
 
 ```swift
@@ -86,7 +101,11 @@ currentLoginAttempt = 1		// currentLoginAttempt = 1
 
 
 
+
+
 We can **declare multiple constants or multiple variables** on a single line, separated by commas:
+
+
 
 
 ```swift
@@ -95,6 +114,8 @@ x = 1
 y = 2
 z = 3
 ```
+
+
 
 
 
@@ -136,6 +157,8 @@ print(`let`)
 
 
 
+
+
 ### 3. Type Annotation & Type Inference
 
 - **Type Annotation**
@@ -159,6 +182,8 @@ print(`let`)
 
 
 
+
+
 - **Type Inference**
 
   Inferring the type of a variable through the type of value used for initialization when declaring a variable.
@@ -176,6 +201,8 @@ print(`let`)
 
   
 
+
+
 ### 4. Literals & Types
 
 - Constant - a symbol / identifier having a fixed value (memory address)
@@ -184,6 +211,8 @@ print(`let`)
 
   - The character (data) itself represented by a fixed value in the source code
   - Integer / Real number / Character / String / Boolean literal and so on
+
+  
 
   
 
@@ -209,6 +238,8 @@ print(`let`)
 
   
 
+  
+
   **2. Integer Types**
 
   - 8-bit : Int8, UInt8
@@ -216,6 +247,8 @@ print(`let`)
   - 32-bit : Int32, UInt32
   - 64-bit : Int64, UInt64
   - Platform dependent : Int, UInt (64-bit on modern devices)
+
+  
 
   
 
@@ -250,6 +283,8 @@ print(`let`)
 
   
 
+  
+
   **4. Boolean Literal**
 
   ```swift
@@ -270,10 +305,10 @@ print(`let`)
 
   ```swift
   let str = "Hello, world!"
-  type(of: str)			//String.Type
+  type(of: str)			
   
   let str1 = ""
-  type(of: str1)		//String.Type
+  type(of: str1)		
   
   var language: String = "Swift"
   ```
@@ -311,9 +346,11 @@ typealias AudioSample = UInt16
 var maxAmplitudeFound = AudioSample.min
 var maxAmplitudeFound1 = UInt16.min 
 
-type(of: maxAmplitudeFound)			//UInt16.Type
-type(of: maxAmplitudeFound1)		//UInt16.Type
+type(of: maxAmplitudeFound)			
+type(of: maxAmplitudeFound1)		
 ```
+
+
 
 
 
@@ -345,7 +382,7 @@ type(of: str)								//String.Type
 
 let integer = Int(-15)
 
-let magnitude = integer.magnitude			//15
-let absNum = abs(integer)							//15
+let magnitude = integer.magnitude		//15
+let absNum = abs(integer)						//15
 ```
 
