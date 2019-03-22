@@ -143,11 +143,11 @@ someFunction(argumentLabel: 10)
 ```
 
 
-<h2> Question
-  - 이름을 입력 값으로 받아서 출력하는 함수 (기본 형태)
-  - 나이를 입력 값으로 받아서 출력하는 함수 (Argument Label 생략)
-  - 이름을 입력 값으로 받아 인사말을 출력하는 함수 (Argument Label 지정)
-  </h2>
+<h2> Question </h2>
+
+- 이름을 입력 값으로 받아서 출력하는 함수 (기본 형태)
+- 나이를 입력 값으로 받아서 출력하는 함수 (Argument Label 생략)
+- 이름을 입력 값으로 받아 인사말을 출력하는 함수 (Argument Label 지정)
 
 ```swift
 func print(name: String) {
