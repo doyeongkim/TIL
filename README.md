@@ -22,8 +22,8 @@ These are my summarized notes I have learnt through this course. This is my key 
 <h3> Week 2 - Swift Basic Grammar </h3>
 
 1. [Variable, Constant, Types, Type Inference](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-2/Course01)
-2. [Basic Operators, Function](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-2/Course02)
-3. 
+2. [Basic Operators](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-2/Course02)
+3. [Functions](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-2/Course03)
 4.
 5.
 6.
