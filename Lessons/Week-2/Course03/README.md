@@ -66,9 +66,9 @@ greet(person: "Dave")
 // Prints "Hello, Dave!"
 ```
 
-    > NOTE
-    >
-    > Strictly speaking, this version of the `greet(person:)` function *does* still return a value, even though no return value is defined. Functions without a defined return type return a special value of type `Void`. This is simply an empty tuple, which is written as `()`.
+$Note$
+
+Functions without a defined return type return a special value of type `Void`. This is simply an empty tuple, which is written as `()`.
 
 
 
