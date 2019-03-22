@@ -4,6 +4,8 @@ Mar 11, 2019 (Mon)
 
 ### 1. Hello, world!
 
+<br />
+
 - **Free Function for log output**
 
 
@@ -45,7 +47,7 @@ print("숫자 " + String(num))
    but is written over multiple lines. */
   ```
 
-
+<br />
 
 - **Semicolon (;)**
 
@@ -60,7 +62,7 @@ print("숫자 " + String(num))
   //print(3);
   ```
 
-
+<br />
 
 ### 2. Constants & Variables
 
