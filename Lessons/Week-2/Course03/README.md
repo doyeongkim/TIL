@@ -103,7 +103,9 @@ addNumbers(a: addNumbers(a: 10, b: 20), b: addNumbers(a: 3, b: 5))
 
 <h2> Argument Label </h2>
 
+<p align="center">
 <img width="500" alt="스크린샷 2019-03-23 오전 1 01 21" src="https://user-images.githubusercontent.com/29372705/54836328-548ac080-4d07-11e9-849d-3a7c7d0a5e83.png">
+</p>
 
 - By default, parameters use their parameter name as their argument label.
 
@@ -200,9 +202,11 @@ arithmeticMean(3, 8.25, 18.75)
 ```
 
 
-<h2> Argument vs Parameter
-  
- <img width="400" alt="스크린샷 2019-03-23 오전 1 01 21" src="https://user-images.githubusercontent.com/29372705/54837946-eba54780-4d0a-11e9-9094-ca00d35e5865.png">
+<h2> Argument vs Parameter </h2>
+
+<p align="center">
+<img width="400" alt="스크린샷 2019-03-23 오전 1 01 21" src="https://user-images.githubusercontent.com/29372705/54837946-eba54780-4d0a-11e9-9094-ca00d35e5865.png">
+</p>
   
 - Parameter
   - 매개변수 = 인자 = Parameter
