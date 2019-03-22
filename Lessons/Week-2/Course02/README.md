@@ -155,13 +155,15 @@ for name in names[..<2] {
 // Alex
 ```
 
-    > Question:
-    
-    How to apply the following range operator in reversed (descending order)?
-    
-    for index in (1...5) {
-        print("\(index) times 5 is \(index * 5)")
-    }
+$**Question**$
+
+How to apply the following range operator in reversed (descending order)?
+
+```swift
+for index in (1...5) {
+  print("\(index) times 5 is \(index * 5)")
+}
+```
 
 
 ```swift
