@@ -5,7 +5,7 @@ Mar 11, 2019 (Mon)
 ### 1. Hello, world!
 
 - **Free Function for log output**
-
+<br />
 
 ```swift
 print(3.14)
@@ -19,8 +19,6 @@ print("숫자 \(num)")
 
 print("숫자 " + String(num))
 ```
-
-
 
 - **Comment**
 
