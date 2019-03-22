@@ -155,7 +155,8 @@ for name in names[..<2] {
 // Alex
 ```
 
-$**Question**$
+
+<h3>Question</h3>
 
 How to apply the following range operator in reversed (descending order)?
 
