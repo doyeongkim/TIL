@@ -1,2 +1,2 @@
-<h2> Project 과제</h2>
+<h2> Projects 과제 </h2>
 
