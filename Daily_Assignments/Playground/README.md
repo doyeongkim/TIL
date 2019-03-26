@@ -1,6 +1,6 @@
 <h1> Playground Daily Assignments </h1>
 
-<h3> 19.03.12 과제 </h3>
+<h3> [19.03.12 과제](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.03.12.playground) </h3>
 
  - 이름과 나이를 입력 받아 자신을 소개하는 글을 출력하는 함수
  - 정수를 하나 입력받아 2의 배수 여부를 반환하는 함수
