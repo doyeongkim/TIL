@@ -1,13 +1,8 @@
 <h1> Playground Daily Assignments </h1>
 
-<h3> [19.03.12 과제](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.03.12.playground) </h3>
+<h3> 19.03.12 과제</h3>
+[바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.03.12.playground) 
 
- - 이름과 나이를 입력 받아 자신을 소개하는 글을 출력하는 함수
- - 정수를 하나 입력받아 2의 배수 여부를 반환하는 함수
- - 정수를 두 개 입력 받아 곱한 결과를 반환하는 함수 (파라미터 하나의 기본 값은 10)
- - 4과목의 시험 점수를 입력받아 평균 점수를 반환하는 함수
- - 점수(문자 또는 숫자)를 입력받아 학점을 반환하는 함수 만들기 (90점 이상 A, 80점 이상 B, 70점 이상 C, 그 이하 F)
- - 점수(문자 또는 숫자)를 여러 개 입력받아 평균 점수에 대한 학점을 반환하는 함수 만들기 (90점 이상 A, 80점 이상 B, 70점 이상 C, 그 이하 F)
 
 
 <h3> 19.03.13 과제 </h3>
