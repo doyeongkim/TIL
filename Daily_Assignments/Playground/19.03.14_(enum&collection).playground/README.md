@@ -23,4 +23,6 @@
 - 별도로 전달한 식육목 모식도 라는 자료를 보고 Dictionary 자료형에 맞도록 중첩형태로 데이터를 저장하고
   + 해당 변수에서 표범 하위 분류를 찾아 사자와 호랑이를 출력하기
 
+<p center>
 <img width="450" alt="스크린샷 2019-03-26 오전 11 18 37" src="https://user-images.githubusercontent.com/29372705/54966964-406dea00-4fb9-11e9-90aa-6059b2522b42.png">
+</p>
