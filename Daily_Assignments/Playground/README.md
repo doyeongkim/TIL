@@ -1,7 +1,8 @@
 <h1> Playground Daily Assignments </h1>
 
 <h3> 19.03.12 과제</h3>
-[바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.03.12.playground) 
+
+1. [바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.03.12.playground) 
 
 
 
