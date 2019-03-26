@@ -15,7 +15,7 @@
 6. [19.03.21 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.03.21_(OOP%20Characteristics).playground)
 
 
-<h2> Playgrounds 과제 </h2>
+<h2> Projects 과제 </h2>
 
 1. [19.03.22 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.03.22_(UILabel:Switch:SegCtr))
     - UISwitch : On, Off 가 바뀔 때마다 Label 의 내용이 On, Off 로 표시되도록 구현
