@@ -10,8 +10,8 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 <h3> TIL - Daily Assignments <Swift> </h3>
 
-[Swift Playground](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground)
-[Swift Projects](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project)
+1. [Swift Playground](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground)
+2. [Swift Projects](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project)
 
 <h3> Week 1 - Introduction </h3>
 
