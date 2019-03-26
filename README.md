@@ -1,10 +1,11 @@
 <h1> FastCampus iOS Programming School </h1>
 
+<div>
+These are my summarized notes I have learnt through this course. This is my key first step forwards to become an iOS developer! :laughing:
 <p align="center">
 <img width="100" alt="2019-03-07 9 11 58" src="https://user-images.githubusercontent.com/29372705/53955969-b51dd900-411d-11e9-9969-a5afba044a53.png">
 </p>
-
-These are my summarized notes I have learnt through this course. This is my key first step forwards to become an iOS developer! :laughing:
+</div>
 
 <h2> Navigation </h2>
 
