@@ -1,6 +1,6 @@
 <h2> 19.03.26 과제 </h2>
 
-__1. TextField 폴더__
+[__1. TextField 폴더__](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.03.26_(TextField:VCDataTransfer)/TextField)
 
   - 텍스트 필드에 어떤 값을 입력하면 별도의 Label 에 입력된 텍스트 표시.
   - 텍스트 필드가 활성화 되어 있을 땐 Label 의 텍스트 색상이 파란색이고, Font 크기는 40
