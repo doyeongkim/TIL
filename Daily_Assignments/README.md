@@ -14,6 +14,9 @@
 
 6. [19.03.21 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.03.21_(OOP%20Characteristics).playground)
 
+7. [19.03.22 과제 바로가기 - 3주 4일차 연습문제](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.03.22_3%EC%A3%BC4%EC%9D%BC%EC%B0%A8_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C.playground)
+
+
 
 <h2> Projects 과제 </h2>
 
