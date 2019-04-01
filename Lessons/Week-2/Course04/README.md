@@ -11,7 +11,7 @@ There are 2 basic forms of an if statement where each form needs to have the ope
 The first form - allows code to be executed only when a condition is true and has the following form: 
 
 ```swift
- if <#condition#> {
-   <#code#>
+ if #condition# {
+   #code#
  }
  ```
