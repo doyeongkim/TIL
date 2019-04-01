@@ -8,7 +8,7 @@ An if statement is used for executing code based on the evaluation of one or mor
 
 There are 2 basic forms of an if statement where each form needs to have the opening and closing braces. 
 
-#The first form# - allows code to be executed only when a condition is true and has the following form: 
+__The first form__ - allows code to be executed only when a condition is true and has the following form: 
 
 ```swift
  if condition {
@@ -16,7 +16,7 @@ There are 2 basic forms of an if statement where each form needs to have the ope
  }
  ```
  
- #The second form# - provide an additional _else clause_ and is used for executing one part of code when the condition is true and another part of code when the same condition is false.
+__The second form__ - provide an additional _else clause_ and is used for executing one part of code when the condition is true and another part of code when the same condition is false.
  
  i ) When there's only one else clause :
  
