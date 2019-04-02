@@ -87,9 +87,62 @@ if temperatureInFahrenheit <= 32 {
   print("It's really warm. Don't forget to wear sunscreen.")
 }
  ```
+
+<h3> Question </h3>
+
+1. What's the differences between using if ~ else if / 2 if statements?
+
+```swift
+var number = 9
+
+if number < 10 {
+  print("Lesser than 10")
+} else if number < 20 {
+  print("Lesser than 20")
+}
+
+// prints Lesser than 10
+
+if number < 10 {
+  print("Lesser than 10")
+}
+if number < 20 {
+  print("Lesser than 20")
+}
+
+// prints Lesser than 10
+// prints Lesser than 20
+```
+
+2. When there is only if ~ else if, how to process as the same without else?
  
+```swift
+number = 25
+
+if number < 10 {
+  print("Lesser than 10")
+} else if number < 20 {
+  print("Lesser than 20")
+} else {
+  print("Bigger than or equal to 20")
+}
+
+// prints Bigger than or equal to 20
+
+
+if number < 10 {
+  print("Lesser than 10")
+} else if number < 20 {
+  print("Lesser than 20")
+} else if number >= 20 {
+  print("Bigger than or equal to 20")
+}
+
+// prints Bigger than or equal to 20
+```
+
+
+<h2> switch Statements </h2>
  
- 
- 
- 
+
  
