@@ -26,5 +26,5 @@
         - AViewController 와 BViewController 를 만들고 각각 하나의 Label 생성.
         - AViewController 와 BViewController 를 전환할 때마다 각 Label 에 화면을 전환한 숫자 1씩 증가
 
-6. [19.04.02 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Daily_Assignments/Project/19.04.02_(Storyboard_Segue)/README.md)
+6. [19.04.02 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.02_(Storyboard_Segue))
     - 스토리보드 이용해서 Segue 생성
