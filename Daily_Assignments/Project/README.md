@@ -28,3 +28,6 @@
 
 6. [19.04.02 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.02_(Storyboard_Segue))
     - 스토리보드 이용해서 Segue 생성
+    
+7. [19.04.02 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.02_(Storyboard_Segue_2))
+    - Storyboard Segue
