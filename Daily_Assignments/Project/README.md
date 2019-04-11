@@ -47,6 +47,10 @@
 9. [19.04.05 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.05_(Fake_Kakao))
     - 짝퉁 카카오 만들기
     
-    []()
+    [19.04.05 과제 바로가기]()
 
+10. [19.04.09 과제 바로가기 - 1번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.09_(AutoLayout))
+    - 오토레이아웃 연습해보기
+    
+    [19.04.09 과제 바로가기 - 2번]()
     
