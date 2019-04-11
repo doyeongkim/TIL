@@ -43,5 +43,10 @@
     
     [19.04.04 과제 바로가기 - 3번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(UISlider))
     - Singleton 에 red, green, blue 변수 생성. <br /> firstview 에 UISlider 를 세개 생성하고 슬라이더 각각의 값을 Singleton 에 각각 저장. <br /> secondview 에 backgroundcolor 를 singleton 에서 red, green, blue 값을 참조하여 보여주세요.
+    
+9. [19.04.05 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.05_(Fake_Kakao))
+    - 짝퉁 카카오 만들기
+    
+    []()
 
     
