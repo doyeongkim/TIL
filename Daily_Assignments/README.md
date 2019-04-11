@@ -54,3 +54,28 @@
 
 7. [19.04.02 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.02_(Storyboard_Segue_2))
     - Storyboard Segue 2
+    
+8. [19.04.04 과제 바로가기 - 1번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(UserDefaults:Singleton:Delegate))
+    - FirstVC 의 TextField 에 입력한 값을 SecondVC 의 Label에 표시하기
+        - UserDefaults 를 이용한 방법으로 구현
+        - Singleton 을 이용한 방법으로 구현
+        - Delegate 를 이용한 방법으로 구현
+
+    [19.04.04 과제 바로가기 - 2번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(DelegateReverse))
+    - delegate 프로토콜과 프로퍼티를 firstVC 에 정의하여 구현했다면 secondVC에, <br /> 이것을 secondVC에 정의해 구현했다면 반대로 firstVC에 정의하여 1번 문제 다시 해결하기
+    
+    [19.04.04 과제 바로가기 - 3번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(UISlider))
+    - Singleton 에 red, green, blue 변수 생성. <br /> firstview 에 UISlider 를 세개 생성하고 슬라이더 각각의 값을 Singleton 에 각각 저장. <br /> secondview 에 backgroundcolor 를 singleton 에서 red, green, blue 값을 참조하여 보여주세요.
+    
+9. [19.04.05 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.05_(Fake_Kakao))
+    - 짝퉁 카카오 만들기
+    
+    [19.04.05 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.05_(LoginPage))
+    - 로그인 구현
+
+10. [19.04.09 과제 바로가기 - 1번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.09_(AutoLayout))
+    - 오토레이아웃 연습해보기
+    
+    [19.04.09 과제 바로가기 - 2번](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Daily_Assignments/Project/19.04.09_BogusAlertController/README.md)
+    - UIAlertController 와 비슷한 기능을 구현
+    
