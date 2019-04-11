@@ -41,6 +41,7 @@
     [19.04.04 과제 바로가기 - 2번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(DelegateReverse))
     - delegate 프로토콜과 프로퍼티를 firstVC 에 정의하여 구현했다면 secondVC에, <br /> 이것을 secondVC에 정의해 구현했다면 반대로 firstVC에 정의하여 1번 문제 다시 해결하기
     
-    [19.04.04 과제 바로가기 - 3번 (UISlider)](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(UISlider))
+    [19.04.04 과제 바로가기 - 3번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(UISlider))
+    - Singleton 에 red, green, blue 변수 생성. <br /> firstview 에 UISlider 를 세개 생성하고 슬라이더 각각의 값을 Singleton 에 각각 저장. <br /> secondview 에 backgroundcolor 를 singleton 에서 red, green, blue 값을 참조하여 보여주세요.
 
     
