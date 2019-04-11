@@ -18,6 +18,8 @@
 
 8. [19.04.02 과제 바로가기 - Type Casting](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.04.02_(TypeCasting).playground)
 
+9. [19.04.04 과제 바로가기 - Singleton 심화문제](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.04.04_(Singleton).playground)
+
 
 <h2> Projects 과제 </h2>
 
