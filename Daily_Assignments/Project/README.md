@@ -52,5 +52,6 @@
 10. [19.04.09 과제 바로가기 - 1번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.09_(AutoLayout))
     - 오토레이아웃 연습해보기
     
-    [19.04.09 과제 바로가기 - 2번]()
+    [19.04.09 과제 바로가기 - 2번](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Daily_Assignments/Project/19.04.09_BogusAlertController/README.md)
+    - UIAlertController 와 비슷한 기능을 구현
     
