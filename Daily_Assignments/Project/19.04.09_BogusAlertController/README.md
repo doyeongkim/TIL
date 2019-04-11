@@ -11,12 +11,16 @@
 
 FirstViewController 에서 SecondViewController 를 Present 할때
 
-```let secondVC = SecondViewController()
+```swift
+let secondVC = SecondViewController()
 secondVC.modalPresentationStyle = .overCurrentContext
-present(secondVC, animated: true)```
+present(secondVC, animated: true)
+```
 
 위 코드를 작성.
 
-```secondVC.modalPresentationStyle = .overCurrentContext```
+```swift
+secondVC.modalPresentationStyle = .overCurrentContext
+```
 
 는 present 하게 되었을때 이전 ViewController 를 뒤에 보여줍니다. 
