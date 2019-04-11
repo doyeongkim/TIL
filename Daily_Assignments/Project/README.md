@@ -32,13 +32,15 @@
 7. [19.04.02 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.02_(Storyboard_Segue_2))
     - Storyboard Segue 2
     
-8. [19.04.04 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(UserDefaults:Singleton:Delegate))
+8. [19.04.04 과제 바로가기 - 1번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(UserDefaults:Singleton:Delegate))
     - FirstVC 의 TextField 에 입력한 값을 SecondVC 의 Label에 표시하기
         - UserDefaults 를 이용한 방법으로 구현
         - Singleton 을 이용한 방법으로 구현
         - Delegate 를 이용한 방법으로 구현
 
-    [19.04.04 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(DelegateReverse))
+    [19.04.04 과제 바로가기 - 2번](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(DelegateReverse))
     - delegate 프로토콜과 프로퍼티를 firstVC 에 정의하여 구현했다면 secondVC에, <br /> 이것을 secondVC에 정의해 구현했다면 반대로 firstVC에 정의하여 1번 문제 다시 해결하기
+    
+    [19.04.04 과제 바로가기 - 3번 (UISlider)](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.04_(UISlider))
 
     
