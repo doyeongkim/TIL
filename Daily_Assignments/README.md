@@ -79,4 +79,9 @@
     
     [19.04.09 과제 바로가기 - 2번](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Daily_Assignments/Project/19.04.09_BogusAlertController/README.md)
     - UIAlertController 와 비슷한 기능을 구현
+
+11. [19.04.11 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.11_(UIScrollView))
+    - UIScrollView 에 UIPageControl을 사용하여 현재 페이지를 표시하는 화면 만들기 (별도 이미지 참고)
     
+12. [19.04.15 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.15_(TableView%20-%20ShoppingItems))
+    - 테이블뷰와 커스텀셀을 이용해서 사고자하는 아이템을 추가하는 기능 구현
