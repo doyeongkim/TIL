@@ -20,6 +20,7 @@
 
 9. [19.04.04 과제 바로가기 - Singleton 심화문제](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.04.04_(Singleton).playground)
 
+10. [19.04.11 과제 바로가기 - Initializer](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground/19.04.11_(Initializer).playground)
 
 <h2> Projects 과제 </h2>
 
