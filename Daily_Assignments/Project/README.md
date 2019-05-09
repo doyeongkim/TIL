@@ -68,3 +68,6 @@
 14. [19.04.30 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.04.30_(Notification))
     - NotificationCenter를 이용해 배경색상 변경하기
     - FirstVC의 TextField에 입력한 내용을 NotificationCenter를 이용해 SecondVC의 Label로 전달하기
+    
+15. [19.05.07 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.05.07_(UIGestureRecognizer))
+    - UIGestureRecognizer
