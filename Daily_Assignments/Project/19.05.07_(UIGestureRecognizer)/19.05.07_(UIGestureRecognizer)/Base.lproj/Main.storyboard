@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_9_05_07__UIGestureRecognizer_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="횟수: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0J-cn-abk">
+                                <rect key="frame" x="40" y="98" width="77" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="gFc-tC-are"/>
+                                    <constraint firstAttribute="width" priority="999" constant="77" id="kcL-gb-V6q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="좌표: (0, 0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9J-Ze-Slh">
+                                <rect key="frame" x="40" y="162" width="123" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="5hs-oG-9MX"/>
+                                    <constraint firstAttribute="width" priority="999" constant="123" id="Icf-N7-6Js"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="h0J-cn-abk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="1Ek-0w-GMo"/>
+                            <constraint firstItem="h0J-cn-abk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="4Iv-8O-sDR"/>
+                            <constraint firstItem="o9J-Ze-Slh" firstAttribute="top" secondItem="h0J-cn-abk" secondAttribute="bottom" constant="31" id="lle-h2-fxb"/>
+                            <constraint firstItem="o9J-Ze-Slh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="pcV-Sd-iGi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xlM-RU-H1s" appends="YES" id="5OR-Qe-TLc"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="coordinateLabel" destination="o9J-Ze-Slh" id="YU2-8S-YnF"/>
+                        <outlet property="countLabel" destination="h0J-cn-abk" id="Wk3-Sd-GMr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xlM-RU-H1s">
+                    <connections>
+                        <action selector="handleTapGesture:" destination="BYZ-38-t0r" id="cuc-2Z-3Ei"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
