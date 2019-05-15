@@ -71,3 +71,6 @@
     
 15. [19.05.07 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.05.07_(UIGestureRecognizer))
     - UIGestureRecognizer
+    
+16. [19.05.10 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.05.10_(MapKit))
+    - MapKit 활용
