@@ -34,4 +34,4 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 <h3> Week 12 - 해커톤 리뷰 / GCD / Closure </h3>
 
-1. [Grand Central Dispatch (GCD)] (https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-12/Course01)
+1. [Grand Central Dispatch (GCD)](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-12/Course01)
