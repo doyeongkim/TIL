@@ -171,7 +171,7 @@ print("value: 2")
 
 Example 2:
 
-async이기 때문에 결과는 매번 실행때마다 다르다. global 즉, (동시에 실행하는) concurrent 큐 이기 때문에 100...105 loop이 끝나지 않아도 200...205 loop이 실행될 수 있다.
+async이기 때문에 결과는 매번 실행때마다 다르다. global 즉, (동시에 실행하는) concurrent 큐 이기 때문에 1...5 loop이 끝나지 않아도 200...205 loop이 실행될 수 있다.
 
 ```swift
 DispatchQueue.global().async {
