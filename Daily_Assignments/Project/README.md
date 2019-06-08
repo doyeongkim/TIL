@@ -77,3 +77,6 @@
     
 17. [19.05.14 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.05.14_(UIViewAnimation))
     - UIViewAnimation 활용해서 동적 버튼 만들기
+
+18. [19.06.07 과제 바로가기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project/19.06.07_(iTunesSearchAPI))
+    - JSON 데이터 파싱하기. iTunes search API로 원하는 노래 목록 찾기 기능 구현
