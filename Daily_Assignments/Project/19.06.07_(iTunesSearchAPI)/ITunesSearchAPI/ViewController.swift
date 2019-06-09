@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     var albums = [Albums]()
 
+    let activityIndicator = UIActivityIndicatorView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +35,11 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.rowHeight = 60
         view.addSubview(tableView)
+        
+        activityIndicator.center = view.center
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        activityIndicator.hidesWhenStopped = true
+        view.addSubview(activityIndicator)
     }
 }
 
@@ -77,10 +84,12 @@ extension ViewController: UITableViewDataSource {
 //        }
         
         
-        if let imageUrlString = self.albums[indexPath.row].artworkUrl100 {
-            let imageUrl = URL(string: imageUrlString)!
-            cell.imageView?.kf.setImage(with: imageUrl)
-        }
+//        if let imageUrlString = self.albums[indexPath.row].artworkUrl100 {
+//            let imageUrl = URL(string: imageUrlString)!
+//            cell.imageView?.kf.setImage(with: imageUrl)
+//        }
+        
+        cell.imageView?.image = self.albums[indexPath.row].artworkUrl100
         cell.textLabel?.text = self.albums[indexPath.row].trackName
         cell.detailTextLabel?.text = self.albums[indexPath.row].artistName
         
@@ -99,6 +108,10 @@ extension ViewController: UISearchResultsUpdating {
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         
+        self.albums.removeAll()
+        
+        self.activityIndicator.startAnimating()
+        
         let searchText = searchController.searchBar.text ?? ""
         let urlString = "https://itunes.apple.com/search?media=music&entity=song&term=" + searchText
         
@@ -115,23 +128,35 @@ extension ViewController: UISearchResultsUpdating {
                 //                print(results)
                 
                 results
-                    .compactMap {
+                    .forEach {
                         guard let artistName = $0["artistName"] as? String,
                             let trackName = $0["trackName"] as? String,
                             let artworkUrl100 = $0["artworkUrl100"] as? String
                             else { return print("Error in parsing") }
-                        let album = Albums(artistName: artistName, trackName: trackName, artworkUrl100: artworkUrl100)
-                        self.albums.append(album)
-                        return album
+                        
+                        let imageUrl = URL(string: artworkUrl100)!
+                        
+                        let dataTask = URLSession.shared.dataTask(with: imageUrl) {
+                            (data, response, error) in
+                            
+                            guard let data = data, let image = UIImage(data: data) else { return }
+                            
+                            let album = Albums(artistName: artistName, trackName: trackName, artworkUrl100: image)
+                            self.albums.append(album)
+//                            print(album)
+                            
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                                self.activityIndicator.stopAnimating()
+                            }
+                        }
+                        dataTask.resume()
                     }
-                    .forEach { print($0) }
                 
             case .failure(let error):
                 print(error.localizedDescription)
             }
-            self.tableView.reloadData()
         }
-        self.albums.removeAll()
     }
 }
 

@@ -6,10 +6,10 @@
 //  Copyright © 2019 Doyeong Kim. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Albums {
     let artistName: String
     let trackName: String
-    let artworkUrl100: String?
+    let artworkUrl100: UIImage
 }
