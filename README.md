@@ -32,6 +32,10 @@ These are my summarized notes I have learnt through this course. This is my key 
 7.
 8.
 
+<h3> Week 8 - Calculator / Domino's Delivery App / Higher-Order Function </h3>
+
+1. [도미노피자 배달 앱 만들어보기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-8/DominoPizza)
+
 <h3> Week 12 - 해커톤 / GCD / Closure </h3>
 
 1. [Grand Central Dispatch (GCD)](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-12/Course01)
