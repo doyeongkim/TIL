@@ -40,7 +40,7 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 1. [Grand Central Dispatch (GCD)](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-12/Course01)
 
-<h3> 날씨 정보 앱 API (SKT Weather Planet API) <h3>
+<h3> 날씨 정보 앱 API (SKT Weather Planet API) </h3>
 
 1. [날씨 정보 앱 API](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-15/WeatherForecastAPI)
 
