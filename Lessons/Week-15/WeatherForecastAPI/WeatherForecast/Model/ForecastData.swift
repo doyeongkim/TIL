@@ -258,3 +258,8 @@ let jsonForecastData = """
         }
 }
 """.data(using: .utf8)!
+
+struct Forecast {
+    let weatherIcon: String
+    let temperature: String
+}

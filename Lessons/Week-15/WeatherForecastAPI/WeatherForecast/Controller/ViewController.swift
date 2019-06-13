@@ -6,6 +6,7 @@
 //  Copyright © 2019 giftbot. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 
 class ViewController: UIViewController {
@@ -18,19 +19,88 @@ class ViewController: UIViewController {
     
     let tableView = UITableView()
     
+    let formatter = DateFormatter()
+    var dateString: Date?
+    var every3HrsArray = [Date]()
+    
+    // 현재날씨 (시간별)
     var skyCode = ""
     var skyName = ""
     var tc = ""
     var tmin = ""
     var tmax = ""
     
+    // 단기예보
+    var forecasts = [Forecast]()
+    
+    // 현재 시간 레이블에 넣기
+    var currentTimeText = "" {
+        didSet {
+            currentTimeLabel.text = currentTimeText
+        }
+    }
+    
+    // 현재위치
+    let locationManager = CLLocationManager()
+    let geoCoder = CLGeocoder()
+    
+    var currentLocationText = "" {
+        didSet {
+            currentLocationLabel.text = currentLocationText
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        currentLocationConfigure()
+        getTimeDate()
         
         configure()
         autoLayout()
         
         fetchData()
+    }
+    
+    private func currentLocationConfigure() {
+        locationManager.delegate = self
+        
+        checkAuthorizationStatus()
+    }
+    
+    private func checkAuthorizationStatus() {
+        switch CLLocationManager.authorizationStatus() {
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .restricted:
+            // Disable location features
+            break
+        case .authorizedWhenInUse:
+            fallthrough
+        case .authorizedAlways:
+            startUpdatingLocation()
+        case .denied:
+            break
+        @unknown default:
+            break
+        }
+    }
+    
+    private func startUpdatingLocation() {
+        let status = CLLocationManager.authorizationStatus()
+        
+        guard status == .authorizedAlways || status == .authorizedWhenInUse, CLLocationManager.locationServicesEnabled() else { return }
+        
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
+    }
+    
+    private func getTimeDate() {
+        // 현재 시간 구하기
+        let date = Date()
+        formatter.timeStyle = .short
+        formatter.locale = Locale(identifier: "ko")
+        currentTimeText = formatter.string(from: date)
     }
     
     private func configure() {
@@ -52,7 +122,6 @@ class ViewController: UIViewController {
         currentLocationLabel.minimumScaleFactor = 0.75
         currentLocationLabel.textColor = .white
         currentLocationLabel.font = .boldSystemFont(ofSize: UIFont.systemFontSize)
-        currentLocationLabel.text = "Cupertino N Blaney Ave"
         
         currentTimeLabel.translatesAutoresizingMaskIntoConstraints = false
         currentTimeLabel.backgroundColor = .clear
@@ -61,7 +130,6 @@ class ViewController: UIViewController {
         currentTimeLabel.minimumScaleFactor = 0.75
         currentTimeLabel.textColor = .white
         currentTimeLabel.font = .systemFont(ofSize: UIFont.smallSystemFontSize)
-        currentTimeLabel.text = "오전 11:57"
         
         refreshButton.setImage(UIImage(named: "rotateIcon"), for: .normal)
         refreshButton.addTarget(self, action: #selector(refreshBtnDidTap(_:)), for: .touchUpInside)
@@ -99,7 +167,8 @@ class ViewController: UIViewController {
     }
     
     @objc private func refreshBtnDidTap(_ sender: UIButton) {
-        
+        startUpdatingLocation()
+        getTimeDate()
     }
     
     func fetchData() {
@@ -114,11 +183,73 @@ class ViewController: UIViewController {
                 tmax = $0.temperature.tmax
             }
             
+            for i in 1...14 {
+                
+                let boolValue = String(i).count == 1 ? skyCode == "SKY_O0\(i)" : skyCode == "SKY_O\(i)"
+                
+                if boolValue {
+                    switch i {
+                    case 1, 2: backgroundImage.image = UIImage(named: "sunny")
+                    case 3, 7: backgroundImage.image = UIImage(named: "cloudy")
+                    case 4, 5, 6, 8, 9, 10: backgroundImage.image = UIImage(named: "rainy")
+                    case 11, 12, 13, 14: backgroundImage.image = UIImage(named: "lightning")
+                    default:
+                        break
+                    }
+                }
+            }
+            
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    // 단기예보 데이터
+    func fetchShortForecastData() {
+        
+        do {
+            let forecastObject = try JSONSerialization.jsonObject(with: jsonForecastData)
+            
+            guard let forecastDict = forecastObject as? [String : Any] else { return print("No data received") }
+            
+            guard let weather = forecastDict["weather"] as? [String : [[String:Any]]],
+                let forecast3Days = weather["forecast3days"] else { return print("Error in parsing") }
+            
+            forecast3Days.forEach {
+                guard let timeRelease = $0["timeRelease"] as? String,
+                    let fcst3Hour = $0["fcst3hour"] as? [String : Any],
+                    let sky = fcst3Hour["sky"] as? [String : String],
+                    let temperature = fcst3Hour["temperature"] as? [String : String]
+                    else { return }
+                
+                var num = 1
+                
+                for _ in 1..<(sky.count/2) {
+                    num += 3
+                    guard let skyValue = sky["code\(num)hour"],
+                        let tempValue = temperature["temp\(num)hour"]
+                        else { return }
+                    
+                    // skyValue string 값 바꿔주기  =>  SKY_S07 -> SKY_O07 로
+                    let range = String.Index(encodedOffset: 4)..<String.Index(encodedOffset: 5)
+                    let skyValueConverted = skyValue.replacingCharacters(in: range, with: "O")
+                    
+                    let forecast = Forecast(weatherIcon: skyValueConverted, temperature: tempValue)
+                    
+                    forecasts.append(forecast)
+                }
+                
+                formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                dateString = formatter.date(from: timeRelease)
+            }
+            
         } catch {
             print(error.localizedDescription)
         }
     }
 }
+
+// MARK: - UITableViewDataSource
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -148,51 +279,58 @@ extension ViewController: UITableViewDataSource {
             tableView.rowHeight = 60
             
             guard let detailCell = tableView.dequeueReusableCell(withIdentifier: "detail", for: indexPath) as? DetailCell else { fatalError() }
+            
+            let date: Date = dateString!
+            
+            let formatter1 = DateFormatter()
+            formatter1.dateFormat = "M.dd (EEE)"
+            
+            let formatter2 = DateFormatter()
+            formatter2.dateFormat = "HH:mm"
+            
+            for i in 0...forecasts.count {
+                let AfterDate = date + TimeInterval((3600 * 4 + (3600 * 3 * i)))
+                every3HrsArray.append(AfterDate)
+            }
     
             detailCell.selectionStyle = .none
-            detailCell.dateLabel.text = "5.29 (Mon)"
-            detailCell.timeLabel.text = "12:00"
-            detailCell.weatherIcon.image = UIImage(named: "SKY_O02")
-            detailCell.temperatureLabel.text = "27º"
+            detailCell.dateLabel.text = formatter1.string(from: date)
+            detailCell.timeLabel.text = formatter2.string(from: every3HrsArray[indexPath.row-1])
+            detailCell.weatherIcon.image = UIImage(named: forecasts[indexPath.row - 1].weatherIcon)
+            
+            if let temperature = Double(forecasts[indexPath.row - 1].temperature) {
+                detailCell.temperatureLabel.text = String(Int(temperature)) + "º"
+            }
             
             return detailCell
         }
     }
 }
 
-//
-//let a = """
-//{
-//"weather": {
-//"hourly": [
-//{
-//"grid": {
-//"longitude": "127.0977600000",
-//"latitude": "37.1177600000",
-//"county": "오산시",
-//"village": "청호동",
-//"city": "경기"
-//},
-//"sky": {
-//"code": "SKY_O01",
-//"name": "맑음"
-//},
-//"temperature": {
-//"tc": "19.20",
-//"tmax": "24.00",
-//"tmin": "13.00"
-//},
-//"timeRelease": "2017-05-25 18:00:00"
-//}
-//]
-//},
-//"common": {
-//"alertYn": "Y",
-//"stormYn": "N"
-//},
-//"result": {
-//"code": 9200,
-//"requestUrl": "/weather/current/hourly?version=2&lat=37.123&lon=127.123",
-//"message": "성공"
-//}
-//}
+// MARK: - CLLocationManagerDelegate
+
+extension ViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let location = locations[0] as CLLocation
+        
+        manager.stopUpdatingLocation()
+        
+        //        print(location.coordinate.latitude)
+        //        print(location.coordinate.longitude)
+        
+        geoCoder.reverseGeocodeLocation(location) { (placemarks, error) in
+            if let error = error {
+                return print(error.localizedDescription)
+            }
+            
+            guard let address = placemarks?.first,
+                let country = address.country,
+                let administrativeArea = address.administrativeArea,
+                let locality = address.locality
+                else { return }
+            
+            self.currentLocationText = "\(country) \(administrativeArea) \(locality)"
+        }
+    }
+}
