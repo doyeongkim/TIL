@@ -60,6 +60,7 @@ class ViewController: UIViewController {
         autoLayout()
         
         fetchData()
+        fetchShortForecastData()
     }
     
     private func currentLocationConfigure() {
