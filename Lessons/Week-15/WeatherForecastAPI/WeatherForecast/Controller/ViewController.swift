@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     let tableView = UITableView()
     
+    var blurView = UIVisualEffectView()
+    
     let formatter = DateFormatter()
     var dateString: Date?
     var every3HrsArray = [Date]()
@@ -139,16 +141,23 @@ class ViewController: UIViewController {
         tableView.backgroundColor = .clear
         tableView.separatorStyle = .none
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(HeaderCell.self, forCellReuseIdentifier: "header")
         tableView.register(DetailCell.self, forCellReuseIdentifier: "detail")
         view.addSubview(tableView)
+        
+        blurView = UIVisualEffectView(effect: UIBlurEffect(style: .dark))
+        backgroundImage.addSubview(blurView)
     }
     
+    var bool = true
     // tableview content inset & offset
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
         tableviewScrollFunction()
+        
+        blurView.frame = view.frame
     }
     
     private func autoLayout() {
@@ -176,6 +185,7 @@ class ViewController: UIViewController {
     @objc private func refreshBtnDidTap(_ sender: UIButton) {
         startUpdatingLocation()
         getTimeDate()
+        tableView.reloadData()
     }
     
     func fetchData() {
@@ -265,6 +275,7 @@ class ViewController: UIViewController {
         
         // tableview content offset
         tableView.contentOffset = CGPoint(x: 0, y: -tableviewInset)
+        blurView.alpha = 0
     }
 }
 
@@ -323,6 +334,18 @@ extension ViewController: UITableViewDataSource {
             
             return detailCell
         }
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension ViewController: UITableViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let topInset = scrollView.contentInset.top
+        let offset = (topInset + scrollView.contentOffset.y) / topInset
+        let alpha = 0.8 * (offset > 1 ? 1 : offset)
+        blurView.alpha = alpha
     }
 }
 
