@@ -144,6 +144,13 @@ class ViewController: UIViewController {
         view.addSubview(tableView)
     }
     
+    // tableview content inset & offset
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        tableviewScrollFunction()
+    }
+    
     private func autoLayout() {
         let guide = view.safeAreaLayoutGuide
         
@@ -160,11 +167,10 @@ class ViewController: UIViewController {
         refreshButton.heightAnchor.constraint(equalToConstant: 25).isActive = true
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.topAnchor.constraint(equalTo: verticalStackView.bottomAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         tableView.leadingAnchor.constraint(equalTo: guide.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: guide.trailingAnchor).isActive = true
-        tableView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
-        tableView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.4).isActive = true
     }
     
     @objc private func refreshBtnDidTap(_ sender: UIButton) {
@@ -248,13 +254,25 @@ class ViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
+    
+    private func tableviewScrollFunction() {
+        
+        // tableview content inset
+        let topLabelHeight = verticalStackView.frame.height + view.safeAreaInsets.top
+        let headerCellHeight: CGFloat = 150
+        let tableviewInset = view.frame.height - topLabelHeight - headerCellHeight
+        tableView.contentInset = UIEdgeInsets(top: tableviewInset, left: 0, bottom: 0, right: 0)
+        
+        // tableview content offset
+        tableView.contentOffset = CGPoint(x: 0, y: -tableviewInset)
+    }
 }
 
 // MARK: - UITableViewDataSource
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 1 + forecasts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
