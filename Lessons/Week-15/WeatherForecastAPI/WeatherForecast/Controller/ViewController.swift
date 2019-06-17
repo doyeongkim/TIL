@@ -11,6 +11,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let baseUrl = "https://api2.sktelecom.com"
+    let appKey = "f24c0fa9-c955-427f-b518-eef54f0bb778"
+    
     let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
     lazy var verticalStackView = UIStackView(arrangedSubviews: [currentLocationLabel, currentTimeLabel])
     let currentLocationLabel = UILabel()
@@ -46,6 +49,8 @@ class ViewController: UIViewController {
     let locationManager = CLLocationManager()
     let geoCoder = CLGeocoder()
     
+    private var lastRequestDate = Date(timeIntervalSinceNow: -10)
+   
     var currentLocationText = "" {
         didSet {
             currentLocationLabel.text = currentLocationText
@@ -61,8 +66,9 @@ class ViewController: UIViewController {
         configure()
         autoLayout()
         
-        fetchData()
-        fetchShortForecastData()
+        // test용
+//        fetchCurrentForecastTesting()
+//        fetchShortForecastTesting()
     }
     
     private func currentLocationConfigure() {
@@ -107,7 +113,6 @@ class ViewController: UIViewController {
     }
     
     private func configure() {
-        backgroundImage.image = UIImage(named: "sunny")
         backgroundImage.contentMode = .scaleAspectFill
         view.addSubview(backgroundImage)
         
@@ -150,7 +155,6 @@ class ViewController: UIViewController {
         backgroundImage.addSubview(blurView)
     }
     
-    var bool = true
     // tableview content inset & offset
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -188,7 +192,8 @@ class ViewController: UIViewController {
         tableView.reloadData()
     }
     
-    func fetchData() {
+    // 현재 날씨 데이터 test
+    func fetchCurrentForecastTesting() {
         do {
             let response = try JSONDecoder().decode(Response.self, from: jsonWeatherData)
 
@@ -221,8 +226,8 @@ class ViewController: UIViewController {
         }
     }
     
-    // 단기예보 데이터
-    func fetchShortForecastData() {
+    // 단기예보 데이터 test
+    func fetchShortForecastTesting() {
         
         do {
             let forecastObject = try JSONSerialization.jsonObject(with: jsonForecastData)
@@ -265,6 +270,7 @@ class ViewController: UIViewController {
         }
     }
     
+    
     private func tableviewScrollFunction() {
         
         // tableview content inset
@@ -298,10 +304,10 @@ extension ViewController: UITableViewDataSource {
             headerCell.weatherImage.image = UIImage(named: skyCode)
             headerCell.weatherStatus.text = skyName
             headerCell.minTempImage.image = UIImage(named: "lowestIcon")
-            headerCell.minTempLabel.text = String(floor(Double(tmin)! * 10) / 10) + "º"
+            headerCell.minTempLabel.text = String(floor((Double(tmin) ?? 0.0) * 10) / 10) + "º"
             headerCell.maxTempImage.image = UIImage(named: "highestIcon")
-            headerCell.maxTempLabel.text = String(floor(Double(tmax)! * 10) / 10) + "º"
-            headerCell.currentTempLabel.text = String(floor(Double(tc)! * 10) / 10) + "º"
+            headerCell.maxTempLabel.text = String(floor((Double(tmax) ?? 0.0) * 10) / 10) + "º"
+            headerCell.currentTempLabel.text = String(floor((Double(tc) ?? 0.0) * 10) / 10) + "º"
             
             return headerCell
             
@@ -324,7 +330,7 @@ extension ViewController: UITableViewDataSource {
             }
     
             detailCell.selectionStyle = .none
-            detailCell.dateLabel.text = formatter1.string(from: date)
+            detailCell.dateLabel.text = formatter1.string(from: every3HrsArray[indexPath.row-1])
             detailCell.timeLabel.text = formatter2.string(from: every3HrsArray[indexPath.row-1])
             detailCell.weatherIcon.image = UIImage(named: forecasts[indexPath.row - 1].weatherIcon)
             
@@ -352,14 +358,34 @@ extension ViewController: UITableViewDelegate {
 // MARK: - CLLocationManagerDelegate
 
 extension ViewController: CLLocationManagerDelegate {
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        let location = locations[0] as CLLocation
+//        let location = locations[0] as CLLocation
         
-        manager.stopUpdatingLocation()
+        guard let location = locations.last else { return }
         
-        //        print(location.coordinate.latitude)
-        //        print(location.coordinate.longitude)
+        
+        // 이전에 받았던 location 값이 캐쉬 형태로 쌓여있을수있음 // 최근 5초 이내에 들어온 위치값만 받겠다
+        guard abs(location.timestamp.timeIntervalSinceNow) < 5 else { return }
+        
+        manager.stopUpdatingLocation()  // 위치를 한번만 받아옴
+        
+        // 최초 1회에는 밑에 if문에서 데이터를 받아오기 위해 차이값을 주기위해 lastRequestDate에서 -10을 해줌
+        let currentDate = Date()
+        
+        if abs(lastRequestDate.timeIntervalSince(currentDate)) > 2 {
+        
+            reverseGeocoding(location: location)
+            
+            fetchCurrentForecast(lat: location.coordinate.latitude, lon: location.coordinate.longitude)
+            fetchShortRangeForecast(lat: location.coordinate.latitude, lon: location.coordinate.longitude)
+            
+            lastRequestDate = currentDate
+        }
+    }
+    
+    private func reverseGeocoding(location: CLLocation) {
         
         geoCoder.reverseGeocodeLocation(location) { (placemarks, error) in
             if let error = error {
@@ -367,12 +393,147 @@ extension ViewController: CLLocationManagerDelegate {
             }
             
             guard let address = placemarks?.first,
-                let country = address.country,
-                let administrativeArea = address.administrativeArea,
-                let locality = address.locality
+                let locality = address.locality,
+                let subLocality = address.subLocality,
+                let thoroughfare = address.thoroughfare
                 else { return }
             
-            self.currentLocationText = "\(country) \(administrativeArea) \(locality)"
+            self.currentLocationText = locality + " " + (!subLocality.isEmpty ? subLocality : thoroughfare)
         }
+    }
+}
+
+// MARK: - ViewController Real API
+
+extension ViewController {
+    
+    private func fetchCurrentForecast(lat: Double, lon: Double) {
+        
+        var urlComponents = URLComponents(string: baseUrl)
+        urlComponents?.path = "/weather/current/hourly"
+        urlComponents?.queryItems = [
+            URLQueryItem(name: "appKey", value: appKey),
+            URLQueryItem(name: "version", value: String(2)),
+            URLQueryItem(name: "lat", value: String(lat)),
+            URLQueryItem(name: "lon", value: String(lon))
+        ]
+        
+        guard let url = urlComponents?.url else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            guard error == nil else { return }
+            
+            guard let response = response as? HTTPURLResponse, (200..<300) ~= response.statusCode
+                else { return }
+            
+            guard let data = data else { return print("No data received") }
+            
+            do {
+                let currentForecastData = try JSONDecoder().decode(RealCurrentForecast.self, from: data)
+                currentForecastData.weather.hourly
+                    .forEach {
+                        self.skyCode = $0.sky.code
+                        self.skyName = $0.sky.name
+                        self.tc = $0.temperature.tc
+                        self.tmin = $0.temperature.tmin
+                        self.tmax = $0.temperature.tmax
+                }
+                
+                for i in 1...14 {
+                    
+                    let boolValue = String(i).count == 1 ? self.skyCode == "SKY_O0\(i)" : self.skyCode == "SKY_O\(i)"
+                    
+                    if boolValue {
+                        DispatchQueue.main.async {
+                            switch i {
+                            case 1, 2: self.backgroundImage.image = UIImage(named: "sunny")
+                            case 3, 7: self.backgroundImage.image = UIImage(named: "cloudy")
+                            case 4, 5, 6, 8, 9, 10: self.backgroundImage.image = UIImage(named: "rainy")
+                            case 11, 12, 13, 14: self.backgroundImage.image = UIImage(named: "lightning")
+                            default:
+                                break
+                            }
+                        }
+                    }
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        
+        task.resume()
+    }
+    
+    private func fetchShortRangeForecast(lat: Double, lon: Double) {
+        
+        var urlComponents = URLComponents(string: baseUrl)
+        
+        urlComponents?.path = "/weather/forecast/3days"
+        urlComponents?.queryItems = [
+            URLQueryItem(name: "appKey", value: appKey),
+            URLQueryItem(name: "version", value: String(2)),
+            URLQueryItem(name: "lat", value: String(lat)),
+            URLQueryItem(name: "lon", value: String(lon))
+        ]
+        
+        guard let url = urlComponents?.url else { return }
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            guard error == nil else { return }
+            
+            guard let response = response as? HTTPURLResponse, (200..<300) ~= response.statusCode
+                else { return }
+            
+            guard let data = data else { return print("No data received") }
+            
+            do {
+                let forecastObject = try JSONSerialization.jsonObject(with: data)
+                
+                guard let forecastDict = forecastObject as? [String : Any] else { return print("No data received") }
+                
+                guard let weather = forecastDict["weather"] as? [String : [[String:Any]]],
+                    let forecast3Days = weather["forecast3days"] else { return print("Error in parsing") }
+                
+                forecast3Days.forEach {
+                    guard let timeRelease = $0["timeRelease"] as? String,
+                        let fcst3Hour = $0["fcst3hour"] as? [String : Any],
+                        let sky = fcst3Hour["sky"] as? [String : String],
+                        let temperature = fcst3Hour["temperature"] as? [String : String]
+                        else { return }
+                    
+                    var num = 1
+                    
+                    for _ in 1..<(sky.count/2) {
+                        num += 3
+                        
+                        guard let skyValue = sky["code\(num)hour"],
+                            let tempValue = temperature["temp\(num)hour"]
+                            else { return }
+                        
+                        guard skyValue.count > 6 else { // print("skyValue is not valid");
+                            continue }
+                        
+                        // skyValue string 값 바꿔주기  =>  SKY_S07 -> SKY_O07 로
+                        let range = String.Index(encodedOffset: 4)..<String.Index(encodedOffset: 5)
+                        let skyValueConverted = skyValue.replacingCharacters(in: range, with: "O")
+                        let forecast = Forecast(weatherIcon: skyValueConverted, temperature: tempValue)
+                        self.forecasts.append(forecast)
+                        
+                        DispatchQueue.main.async {
+                            self.tableView.reloadData()                            
+                        }
+                    }
+                
+                    self.formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+                    self.dateString = self.formatter.date(from: timeRelease)
+                }
+                
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        task.resume()
     }
 }
