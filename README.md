@@ -47,3 +47,7 @@ These are my summarized notes I have learnt through this course. This is my key 
 <h3> Music Player App (iTunes API) </h3>
 
 1. [iTunes노래 미리듣기 기능 구현](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-15/iTunesMusicPlayer)
+
+<h3> Custom Tab Bar </h3>
+
+1. [커스텀 탭바 만들기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-16/CustomTabBarExample)
