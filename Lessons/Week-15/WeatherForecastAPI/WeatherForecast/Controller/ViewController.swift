@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     let locationManager = CLLocationManager()
     let geoCoder = CLGeocoder()
     
-    private var lastRequestDate = Date(timeIntervalSinceNow: -10)
+//    private var lastRequestDate = Date(timeIntervalSinceNow: -10)
    
     var currentLocationText = "" {
         didSet {
@@ -360,32 +360,35 @@ extension ViewController: UITableViewDelegate {
 extension ViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
+        print("==============locationManager executed===================")
 //        let location = locations[0] as CLLocation
         
-        guard let location = locations.last else { return }
+        guard let location = locations.last else { return print("Haven't got location.last") }
         
         
         // 이전에 받았던 location 값이 캐쉬 형태로 쌓여있을수있음 // 최근 5초 이내에 들어온 위치값만 받겠다
-        guard abs(location.timestamp.timeIntervalSinceNow) < 5 else { return }
+//        guard abs(location.timestamp.timeIntervalSinceNow) < 5 else { return print("Error timeInterval")}
         
         manager.stopUpdatingLocation()  // 위치를 한번만 받아옴
         
         // 최초 1회에는 밑에 if문에서 데이터를 받아오기 위해 차이값을 주기위해 lastRequestDate에서 -10을 해줌
-        let currentDate = Date()
+//        let currentDate = Date()
         
-        if abs(lastRequestDate.timeIntervalSince(currentDate)) > 2 {
+//        if abs(lastRequestDate.timeIntervalSince(currentDate)) > 2 {
         
             reverseGeocoding(location: location)
             
             fetchCurrentForecast(lat: location.coordinate.latitude, lon: location.coordinate.longitude)
             fetchShortRangeForecast(lat: location.coordinate.latitude, lon: location.coordinate.longitude)
             
-            lastRequestDate = currentDate
-        }
+//            lastRequestDate = currentDate
+//        } else {
+//            print("lastRequestDate > 2 error")
+//        }
     }
     
     private func reverseGeocoding(location: CLLocation) {
+        
         
         geoCoder.reverseGeocodeLocation(location) { (placemarks, error) in
             if let error = error {
@@ -399,6 +402,7 @@ extension ViewController: CLLocationManagerDelegate {
                 else { return }
             
             self.currentLocationText = locality + " " + (!subLocality.isEmpty ? subLocality : thoroughfare)
+            print("currentLocationText: ", self.currentLocationText)
         }
     }
 }
