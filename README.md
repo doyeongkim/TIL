@@ -1,4 +1,4 @@
-<h1> FastCampus iOS Programming School </h1>
+<h1> iOS Programming with Swift</h1>
 
 <div>
 These are my summarized notes I have learnt through this course. This is my key first step forwards to become an iOS developer! :laughing:
