@@ -26,11 +26,6 @@ These are my summarized notes I have learnt through this course. This is my key 
 1. [Variable, Constant, Types, Type Inference](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-2/Course01)
 2. [Basic Operators](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-2/Course02)
 3. [Functions](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-2/Course03)
-4.
-5.
-6.
-7.
-8.
 
 <h3> Calculator / Domino's Delivery App / Higher-Order Function </h3>
 
