@@ -31,7 +31,7 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 1. [도미노피자 배달 앱 만들어보기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-8/DominoPizza)
 
-<h3> 해커톤 / GCD / Closure </h3>
+<h3> 1차 해커톤 / GCD / Closure </h3>
 
 1. [Hackerton 로또리 프로젝트](https://github.com/doyeongkim/LottoRiProject)
 2. [Grand Central Dispatch (GCD)](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-12/Course01)
@@ -47,3 +47,7 @@ These are my summarized notes I have learnt through this course. This is my key 
 <h3> Custom Tab Bar </h3>
 
 1. [커스텀 탭바 만들기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-16/CustomTabBarExample)
+
+<h3> 2차 해커톤 </h3>
+
+1. [Hackerton](https://github.com/doyeongkim/SmartNote)
