@@ -50,4 +50,4 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 <h3> 2차 해커톤 </h3>
 
-1. [Hackerton](https://github.com/doyeongkim/SmartNote)
+1. [Hackerton - Smart Note](https://github.com/doyeongkim/SmartNote)
