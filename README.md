@@ -51,3 +51,6 @@ These are my summarized notes I have learnt through this course. This is my key 
 <h3> 2차 해커톤 </h3>
 
 1. [Hackerton - Smart Note](https://github.com/doyeongkim/SmartNote)
+
+<h3> Firebase Database Practice </h3>
+1. [Firebase Database Practice](https://github.com/doyeongkim/TIL/tree/master/Lessons/FirebasePractice)
