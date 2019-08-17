@@ -37,7 +37,7 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 <h3> GCD / Closure </h3>
 
-2. [Grand Central Dispatch (GCD)](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-12/Course01)
+1. [Grand Central Dispatch (GCD)](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-12/Course01)
 
 <h3> 날씨 정보 앱 API (SKT Weather Planet API) </h3>
 
