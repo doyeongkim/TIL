@@ -31,9 +31,12 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 1. [도미노피자 배달 앱 만들어보기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-8/DominoPizza)
 
-<h3> 1차 해커톤 / GCD / Closure </h3>
+<h3> 1차 해커톤 </h3>
 
 1. [Hackerton 로또리 프로젝트](https://github.com/doyeongkim/LottoRiProject)
+
+<h3> GCD / Closure </h3>
+
 2. [Grand Central Dispatch (GCD)](https://github.com/doyeongkim/FastCampus_iOS_School/blob/master/Lessons/Week-12/Course01)
 
 <h3> 날씨 정보 앱 API (SKT Weather Planet API) </h3>
