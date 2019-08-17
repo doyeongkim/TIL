@@ -55,7 +55,3 @@ These are my summarized notes I have learnt through this course. This is my key 
 <h3> Firebase Database Practice </h3>
 
 1. [Firebase Database Practice](https://github.com/doyeongkim/TIL/tree/master/Lessons/FirebasePractice)
-
-<h3> Urban Dictionary API </h3>
-
-1. Create UrbanDictionary App - using Urban Dictionary API
