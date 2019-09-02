@@ -29,7 +29,8 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 <h3> Calculator / Domino's Delivery App / Higher-Order Function </h3>
 
-1. [도미노피자 배달 앱 만들어보기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-8/DominoPizza)
+1. [계산기 구현하기](https://github.com/doyeongkim/TIL/tree/master/Lessons/Week-8/MyFirstCalculator)
+2. [도미노피자 배달 앱 만들어보기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-8/DominoPizza)
 
 <h3> 1차 해커톤 </h3>
 
