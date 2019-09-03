@@ -61,3 +61,40 @@ immutableArray.forEach(printParam(_:))   // 1 2 3 4
 print()
 ```
 
+## map 
+
+- 컬렉션의 각 요소(Element)에 동일 연산을 적용하여, 변형된 새 컬렉션 반환
+
+Ex)
+
+```swift
+let names = ["Chris", "Alex", "Bob", "Barry"]
+
+names
+  .map { $0 + "'s name" }
+  .forEach { print($0) }    
+
+let intArr = Array<Int>(repeating: 2, count: 10)
+
+// for문
+for (index, value) in intArr.enumerated() {
+    print(index, value)
+}
+
+// for문
+var myArr = [Int]()
+for (index, value) in intArr.enumerated() {
+    myArr.append(index + value)
+}
+print(myArr)
+
+// map
+let indexPlusElement = intArr.enumerated().map {
+  return $0 + $1
+}
+print(indexPlusElement)
+
+// array배열에 map을쓰면 array 배열로 반환
+// dictionary에 map을 쓰면 dictionary로 반환
+```
+
