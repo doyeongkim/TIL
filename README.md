@@ -11,8 +11,8 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 <h3> 일일 과제 <Swift> </h3>
 
-1. [Swift Playground](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground)
-2. [Swift Projects](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project)
+1. [Swift Playground / 플레이그라운드 ](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground)
+2. [Swift Projects / 프로젝트 ](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project)
 
 <h3> Introduction </h3>
 
