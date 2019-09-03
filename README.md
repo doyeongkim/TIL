@@ -9,7 +9,7 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 <h2> Navigation </h2>
 
-<h3> Daily Assignments <Swift> </h3>
+<h3> 일일  <Swift> </h3>
 
 1. [Swift Playground](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Playground)
 2. [Swift Projects](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Daily_Assignments/Project)
