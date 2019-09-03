@@ -125,3 +125,36 @@ let countAlexNames = names
   .count
 print(countAlexNames)
 ```
+
+
+# reduce
+
+- 컬렉션의 각 요소들을 결합하여 단 하나의 타입을 지닌 값으로 반환.   e.g. Int, String 타입
+
+Ex)
+
+```swift
+/***************************************************
+ (1...100)
+   .reduce(<#T##initialResult: Result##Result#>, <#T##nextPartialResult: (Result, Int) throws -> Result##(Result, Int) throws -> Result#>)
+ initialResult - 초기값
+ nextPartialResult - (이전 요소까지의 결과값, 컬렉션이 지닌 현재 요소)
+ ***************************************************/
+ 
+ let sum1to100 = (1...100)
+  .reduce(0) { (sum: Int, next: Int) in
+    return sum + next
+    // 0 + 1 = 1
+    // 1 + 2 = 3
+    // 3 + 3 = 6
+    // 6 + 4 = 10
+  }
+print(sum1to100)
+
+//직접 더하는 형태 X
+//(1...100).reduce(0) { (sum, next) in
+//  sum += next
+//}
+
+(1...100).reduce(0) { $0 + $1 }
+```
