@@ -11,3 +11,18 @@
 > - 객체의 인자로 넘길 수 있어야 한다.
 > - 객체의 리턴값으로 리턴할 수 있어야 한다.
 
+Ex)
+
+```swift
+func firstClassCitizen() {
+  print("function call")
+}
+
+func function(_ parameter: @escaping ()->()) -> (()->()) {
+  return parameter
+}
+
+let returnValue = function(firstClassCitizen)
+returnValue  // 함수자체
+returnValue() // 값을 출력할때
+```
