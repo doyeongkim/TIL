@@ -31,6 +31,7 @@ These are my summarized notes I have learnt through this course. This is my key 
 
 1. [계산기 구현하기](https://github.com/doyeongkim/TIL/tree/master/Lessons/Week-8/MyFirstCalculator)
 2. [도미노피자 배달 앱 만들어보기](https://github.com/doyeongkim/FastCampus_iOS_School/tree/master/Lessons/Week-8/DominoPizza)
+3. [고차함수](https://github.com/doyeongkim/TIL/tree/master/Lessons/Week-8/Higher%20Order%20Function)
 
 <h3> 1차 해커톤 </h3>
 
