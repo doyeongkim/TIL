@@ -167,3 +167,39 @@ print(sum1to100)
 
 ## compactMap
 
+- 컬렉션의 요소 중 옵셔널이 있을 경우 제거
+
+Ex)
+
+```swift
+let optionalStringArr = ["A", nil, "B", nil, "C"]
+print(optionalStringArr)  \\ [Optional("A"), nil, Optional("B"), nil, Optional("C")]
+print(optionalStringArr.compactMap { $0 })  \\ ["A", "B", "C"]
+
+
+let numbers = [-2, -1, 0, 1, 2]
+let positiveNumbers = numbers.compactMap { $0 >= 0 ? $0 : nil }
+print(positiveNumbers)   \\ [0, 1, 2]
+```
+
+<br >
+
+## flatMap
+
+- 중첩된 컬렉션을 하나의 컬렉션으로 병합
+
+Ex)
+
+```swift
+let nestedArr = [[1, 2, 3], [1, 5, 99], [1, 1]]
+print(nestedArr)   \\ [[1, 2, 3], [1, 5, 99], [1, 1]]
+print(nestedArr.flatMap { $0 })   \\ [1, 2, 3, 1, 5, 99, 1, 1]
+
+
+let nestedArr2 = [[[1,2,3], [4,5,6], [7, 8, 9]], [[10, 11, 12], [13, 14]]]
+let flattenNumbers1 = nestedArr2.flatMap { $0 }
+print(flattenNumbers1)   \\ [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12], [13, 14]]
+
+let flattenNumbers2 = flattenNumbers1.flatMap { $0 }
+print(flattenNumbers2)   \\ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+```
