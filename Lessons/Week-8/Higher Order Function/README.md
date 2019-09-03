@@ -127,7 +127,7 @@ print(countAlexNames)
 ```
 
 
-# reduce
+## reduce
 
 - 컬렉션의 각 요소들을 결합하여 단 하나의 타입을 지닌 값으로 반환.   e.g. Int, String 타입
 
@@ -158,3 +158,8 @@ print(sum1to100)
 
 (1...100).reduce(0) { $0 + $1 }
 ```
+
+<br >
+
+## compactMap
+
