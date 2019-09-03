@@ -28,6 +28,7 @@ returnValue() // 값을 출력할때
 ```
 
 <br >
+
 ## forEach
 
 - 컬렉션의 각 요소(Element)에 동일 연산을 적용하며, 반환값이 없는 형태
@@ -63,6 +64,7 @@ print()
 ```
 
 <br >
+
 ## map 
 
 - 컬렉션의 각 요소(Element)에 동일 연산을 적용하여, 변형된 새 컬렉션 반환
@@ -101,6 +103,7 @@ print(indexPlusElement)
 ```
 
 <br >
+
 ## filter
 
 - 컬렉션의 각 요소를 평가하여 조건을 만족하는 요소만을 새로운 컬렉션으로 반환
@@ -127,6 +130,7 @@ print(countAlexNames)
 ```
 
 <br >
+
 ## reduce
 
 - 컬렉션의 각 요소들을 결합하여 단 하나의 타입을 지닌 값으로 반환.   e.g. Int, String 타입
@@ -160,5 +164,6 @@ print(sum1to100)
 ```
 
 <br >
+
 ## compactMap
 
