@@ -26,3 +26,38 @@ let returnValue = function(firstClassCitizen)
 returnValue  // 함수자체
 returnValue() // 값을 출력할때
 ```
+
+## forEach
+
+- 컬렉션의 각 요소(Element)에 동일 연산을 적용하며, 반환값이 없는 형태
+
+Ex)
+
+```swift
+let immutableArray = [1, 2, 3, 4]
+
+for num in immutableArray {
+  print(num, terminator: " ")   // 1 2 3 4
+}
+print() 
+
+
+immutableArray.forEach { num in
+  print(num, terminator: " ")   // 1 2 3 4
+}
+print()
+
+
+immutableArray.forEach {
+  print($0, terminator: " ")    // 1 2 3 4
+}
+print()
+
+
+func printParam(_ num: Int) {
+  print(num, terminator: " ")     
+}
+immutableArray.forEach(printParam(_:))   // 1 2 3 4
+print()
+```
+
