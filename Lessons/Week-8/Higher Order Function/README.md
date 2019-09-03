@@ -27,6 +27,7 @@ returnValue  // 함수자체
 returnValue() // 값을 출력할때
 ```
 
+
 ## forEach
 
 - 컬렉션의 각 요소(Element)에 동일 연산을 적용하며, 반환값이 없는 형태
@@ -60,6 +61,7 @@ func printParam(_ num: Int) {
 immutableArray.forEach(printParam(_:))   // 1 2 3 4
 print()
 ```
+
 
 ## map 
 
@@ -98,3 +100,28 @@ print(indexPlusElement)
 // dictionary에 map을 쓰면 dictionary로 반환
 ```
 
+
+## filter
+
+- 컬렉션의 각 요소를 평가하여 조건을 만족하는 요소만을 새로운 컬렉션으로 반환
+
+Ex)
+
+```swift
+let names = ["Chris", "Alex", "Bob", "Barry"]
+
+// 1.
+let containBNames = names
+  .filter { (name) -> Bool in
+    return name.contains("B")
+  }
+print(containBNames)
+
+// 2.
+print(names.filter { $0.contains("B") })
+
+let countAlexNames = names
+  .filter { $0 == "Alex" }
+  .count
+print(countAlexNames)
+```
