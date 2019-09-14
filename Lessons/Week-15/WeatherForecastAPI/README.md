@@ -1,9 +1,9 @@
 <h2> 날씨 정보 앱 - (SKT Developers) Weather Planet API </h2>
 
-- 현재날씨 (시간별)
+- 개요: SKT Weather Planet API로부터 날씨 데이터를 불러와 현재날씨와 단기예보 정보를 제공해주는 날씨 앱 입니다.
 
-수집된 기상관측 정보를 격자단위로 분석.처리하여 1시간 단위로 현재날씨 정보를 제공한다. Request Parameter는 다음중 한 종류만 선택적으로 사용해야 한다. (1) lat/lon (2) city/county/village
+<p align="center">
+<img width="500" alt="스크린샷 2019-09-14 오후 8 02 36" src="https://user-images.githubusercontent.com/29372705/64907235-9f234d80-d72a-11e9-9ab1-a484ba69e4a6.png">
+</p>
+</div>
 
-- 단기 예보
-
-3시간 간격으로 매일 8회(2, 5, 8, 11, 14, 17, 20, 23시), 5Km 격자 단위로 단기예보 정보를 제공하며, 예보시간은 발표시간+4시간부터 최대 67시간(3일)까지 제공한다 Request Parameter는 다음중 한 종류만 선택적으로 사용해야 한다. (1) lat/lon (2) city/county/village
